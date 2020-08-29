@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+
+<div class="navbar">
+    <a href="index.html">
+        <div id="logo">
+            <img src="source-images/logo.png" alt="m.a. designs logo">
+            <img src="source-images/logo-hover.png" alt="m.a. designs logo">
+        </div>
+    </a>
+</div>
+<!--
+    <div id="logotype">
+        <a href="home.html"><h5>m.a.designs</h5></a>
+    </div>
+-->
+
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    
+<div class="topnav" id="myTopnav">
+    <div class="topnav-text">
+            <a><h3>m.a. designs</h3></a>
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="#contact-me.html"><h3>contact me.</h3></a>
+    </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+    
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    
+
+    
+    
+    <div id="floating-menu">
+        <div id="logotype">
+            <a href="index.html"><h5>m.a.designs</h5></a>
+        </div>
+
+        <div id="menu">
+            <h5><a href="work.html">work<span class="period">.</span></a> 
+                <a href="about.html">about<span class="period">.</span></a> <a href="contact-me.html">contact me<span class="period">.</span></a>
+            </h5>
+        </div>
+    </div>
+    
+    
+    <div id="work">
+        <img src="source-images/header-about.png" alt="project list">
+    </div>
+
+    <div class="body-text">
+       <div id="intro-paragraphs"><h2>Ultimately, I’m all about connection.</h2>
+        <p>Connecting ideas, connecting people, building something better, together. I was born to collaborate and bridge ideas, so my first love was Words: I drive discussions, I write incredibly concise instructional materials for incredibly boring material.  My second love was Shapes and Colors: As a teenager, I found a passion for aligning one text box with another (yes, a passion).</p>
+
+        <p>You want me on your team because I bring these two worlds together: Writer and Visual Designer. And not the worst at public speaking.</p></div>
+
+        <div id="signature">
+            <img src="source-images/signature.png" alt="signature">
+        </div>
+    </div>
+    
+</body>
+    
+</html>
