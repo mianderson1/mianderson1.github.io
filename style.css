@@ -41,6 +41,8 @@
 
 /* Global */
 
+
+
 .navbar {
     width: 100%;
     text-align: center;
@@ -211,13 +213,13 @@ h2 {
 }
 
 @media (max-width: 900px) {
-    h2{
+    h2.menu {
         font-size: 3vw;
     }}
 
 
 @media (max-width: 600px) {
-    h2{
+    h2.menu {
         font-size: 4vw;
     }}
 
@@ -238,7 +240,7 @@ h2.menu a:hover {
     color: #4A6899;
 } 
 
-#intro-paragraphs p {
+#intro-paragrapos p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -597,7 +599,7 @@ a:hover #logo-home img:first-child {
     margin-bottom: 2%;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 850px) {
 .column img {
     margin-bottom: 6%;
 }
