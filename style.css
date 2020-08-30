@@ -385,14 +385,14 @@ h5 {
 }
    
     
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     #home-block {
     width: 70%;
 }
 }
 
 
-@media only screen (max-width: 350px) {
+@media only screen and (max-width: 350px) {
     #home-block {
     width: 100%;
         background-color: red;
