@@ -392,7 +392,7 @@ h5 {
 }
 
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 450px) {
     #home-block {
     width: 100%;
         background-color: red;
@@ -412,7 +412,7 @@ h5 {
   text-align: center;
 }
 
-@media (max-width: 200px) {
+@media only screen and (max-width: 350px) {
     #home-home-block {
         width: 100%
     }}
