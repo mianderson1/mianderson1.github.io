@@ -192,6 +192,11 @@ p {
         font-size: 3vw;
     }}
 
+@media (max-width: 350px) {
+    p{
+        font-size: 5vw;
+    }}
+
 
 h1 {
     font-family: Mont-Heavy, sans-serif;
@@ -260,6 +265,10 @@ h3 {
         font-size: 6vw;
     }}
 
+@media (max-width: 350px) {
+    h3{
+        font-size: 8vw;
+    }}
 
 
 h4 {
@@ -279,6 +288,12 @@ h4 {
     h4{
         font-size: 3.5vw;
     }}
+
+@media (max-width: 350px) {
+    h4{
+        font-size: 5vw;
+    }}
+
 
 
 h5 {
@@ -377,9 +392,10 @@ h5 {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
     #home-block {
     width: 100%;
+        background-color: red;
 }
 }
 
