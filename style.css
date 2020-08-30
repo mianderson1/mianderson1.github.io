@@ -48,7 +48,7 @@
     text-align: center;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 .topnav-text {
     display: none;
     }}
@@ -135,7 +135,7 @@ body {
     color: #CFD7E5;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #floating-menu {
         display: none;
     }
@@ -182,17 +182,17 @@ p {
     margin-bottom: 1em;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     p{
         font-size: 2vw;
     }}
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     p{
         font-size: 3vw;
     }}
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
     p{
         font-size: 5vw;
     }}
@@ -213,13 +213,13 @@ h2 {
     margin-block-end: 0;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     h2.menu {
         font-size: 3vw;
     }}
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     h2.menu {
         font-size: 4vw;
     }}
@@ -254,18 +254,18 @@ h3 {
     text-align: center;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     h3{
         font-size: 4.5vw;
     }}
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     h3{
         font-size: 6vw;
     }}
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
     h3{
         font-size: 8vw;
     }}
@@ -279,17 +279,17 @@ h4 {
     text-align: center;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     h4{
         font-size: 2.6vw;
     }}
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     h4{
         font-size: 3.5vw;
     }}
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
     h4{
         font-size: 5vw;
     }}
@@ -317,13 +317,13 @@ h5 {
     line-height: 0.2
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 #home-block h1 {
     font-size: 8vw;
 }
 }
 
-@media (max-width: 300px) {
+@media only screen and (max-width: 380px) {
     #home-block h1 {
     font-size: 9.8vw;
     }
@@ -331,26 +331,26 @@ h5 {
 
 
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 #home-block h2 {
     font-size: 4.1vw;
 }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 #home-block h2.menu {
     font-size: 3.9vw;
 }
 }
 
 
-@media (max-width: 300px) {
+@media only screen and (max-width: 380px) {
 #home-block h2 {
     font-size: 5vw;
 }
 }
 
-@media (max-width: 300px) {
+@media only screen and (max-width: 380px) {
 #home-block h2.menu {
     font-size: 4.7vw;
 }
@@ -505,21 +505,21 @@ a:hover #logo-home img:first-child {
     transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 600px) {.project h1 {
+@media only screen and (max-width: 600px) {.project h1 {
     font-size: 5vw;
     }}
     }
 
 /* Add a blue background color to the top navigation */
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 .topnav {
   background-color: #CFD7E6;
   overflow: hidden;
 }
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 .topnav {
   display: none;
 }
@@ -571,7 +571,7 @@ a:hover #logo-home img:first-child {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -626,13 +626,13 @@ a:hover #logo-home img:first-child {
     margin-bottom: 2%;
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 .column img {
     margin-bottom: 6%;
 }
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 .column img {
     margin-bottom: 2%;
 }
@@ -642,13 +642,13 @@ a:hover #logo-home img:first-child {
     margin: 4% 25% 4% 25%;
 }
 
-@media (max-width: 900px){
+@media only screen and (max-width: 900px){
     .body-text {
     margin: 4% 20% 4% 20%;
 }}
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .body-text {
     margin: 6% 10% 6% 10%;
 }}
@@ -728,7 +728,7 @@ a:hover #logo-home img:first-child {
 
 
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 .column {
     grid-template-columns: 1fr;
     margin-bottom: 0;
