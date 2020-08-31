@@ -34,9 +34,13 @@
           <a href="about.html"><h3>about.</h3></a>
           <a href="#contact-me.html"><h3>contact me.</h3></a>
     </div>
-  <a id="hamburger" href="javascript:void(0);" class="icon">
-    <i class="fa fa-bars"></i>
-  </a>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
 </div>
 
     <div id="floating-menu">
@@ -99,9 +103,10 @@
     
 
     <script>
-        var hamburger = document.querySelector('#hamburger');
+        var meatballs = document.querySelector('.meatballs');
         var topnav = document.querySelector('.topnav');
-        hamburger.addEventListener('click', function () {
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
             topnav.classList.toggle('responsive')
         })
     </script>
