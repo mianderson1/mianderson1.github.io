@@ -44,9 +44,10 @@
 
 
 .navbar {
+    margin-left: 10%;
     text-align: center;
     position: fixed;
-    width: 100%;
+    width: 80%;
     z-index: 1000;
 }
 
@@ -573,18 +574,14 @@ a:hover #logo-home img:first-child {
 @media only screen and (max-width: 600px) {.project h1 {
     font-size: 5vw;
     }}
-    }
+
 
 /* Add a blue background color to the top navigation */
 
-.topnav {
-    display: none;
-}
-
 @media only screen and (max-width: 600px) {
     .topnav {
-    background-color: #CFD7E6;
-    overflow: hidden;
+        background-color: #CFD7E6;
+        overflow: hidden;
     }
 }
 

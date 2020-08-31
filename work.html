@@ -34,27 +34,11 @@
           <a href="about.html"><h3>about.</h3></a>
           <a href="#contact-me.html"><h3>contact me.</h3></a>
     </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a id="hamburger" href="javascript:void(0);" class="icon">
     <i class="fa fa-bars"></i>
   </a>
 </div>
 
-
-    
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.className === "topnav") {
-    x.className += "responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-    
-
-    
-    
     <div id="floating-menu">
         <div id="logotype">
             <a href="index.html"><h5>m.a.designs</h5></a>
@@ -113,6 +97,15 @@ function myFunction() {
         
     </div>
     
+
+    <script>
+        var hamburger = document.querySelector('#hamburger');
+        var topnav = document.querySelector('.topnav');
+        hamburger.addEventListener('click', function () {
+            topnav.classList.toggle('responsive')
+        })
+    </script>
+
 </body>
     
 </html>
