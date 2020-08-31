@@ -44,8 +44,10 @@
 
 
 .navbar {
-    width: 100%;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 @media only screen and (min-width: 600px) {
@@ -53,40 +55,19 @@
     display: none;
     }}
 
+#logo {
+    padding-top: 1%;
+}
 
 #logo img {
-    display: block;
-    margin: auto;
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-#logo {
     display: inline-block;
-    margin: 0 auto;
-    width: 8%;
-/*    height: 100px; */
-    position: fixed;
-    padding-top: 1%;
-    z-index: 1000;
-/*    justify-content: center;*/
+    margin: auto;
+    width: 102px;
 }
 
-
-#logo img:last-child {
-    display: none;
+#logo img:hover {
+    opacity: 0.4;
 }
-
-#logo:hover img:last-child {
-    display: block;
-}
-
-#logo:hover img:first-child {
-    display: none;
-}
-
 
 
 #logotype {
