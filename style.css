@@ -348,11 +348,31 @@ h5 {
 
 
 
+@media only screen and (max-width: 900px) {
+#home-block h2 {
+    font-size: 2.58vw;
+}
+}
+
+
 @media only screen and (max-width: 500px) {
 #home-block h2 {
     font-size: 4.1vw;
 }
 }
+
+@media only screen and (max-width: 380px) {
+#home-block h2 {
+    font-size: 5vw;
+}
+}
+
+@media only screen and (max-width: 900px) {
+#home-block h2.menu {
+    font-size: 2.48vw;
+}
+}
+
 
 @media only screen and (max-width: 500px) {
 #home-block h2.menu {
@@ -361,11 +381,7 @@ h5 {
 }
 
 
-@media only screen and (max-width: 380px) {
-#home-block h2 {
-    font-size: 5vw;
-}
-}
+
 
 @media only screen and (max-width: 380px) {
 #home-block h2.menu {
@@ -386,7 +402,7 @@ h5 {
 #home-block {
     display: block;
     margin: 0 auto;
-    line-height: 0.4;
+    line-height: 0.75;
     width: 40%;
 /*    position: absolute;*/
 /*    top: 50%; left: 32%;*/
@@ -401,7 +417,13 @@ h5 {
   position: relative;
 }
    
-    
+@media only screen and (max-width: 900px) {
+    #home-block {
+    width: 80%;
+}
+}
+
+
 @media only screen and (max-width: 500px) {
     #home-block {
     width: 70%;
@@ -443,6 +465,18 @@ h5 {
     width: 40%;
     height: auto;
     text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    #logo-home img {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #logo-home img {
+        width: 40%;
+    }
 }
 
 #logo-home {
@@ -654,6 +688,12 @@ a:hover #logo-home img:first-child {
     width: 96%;
 }
 
+@media only screen and (max-width: 380px) {
+    #header-bc {
+        width: 100%;
+    }
+}
+
 #header-bc img{
     display: block;
     margin: auto;
@@ -664,6 +704,13 @@ a:hover #logo-home img:first-child {
     display: block;
     margin: auto;
     width: 96%;
+}
+
+@media only screen and (max-width: 380px) {
+    .body-photos {
+        width: 100%;
+        margin-bottom: 10%;
+    }
 }
 
 .body-photos img {
@@ -726,7 +773,7 @@ a:hover #logo-home img:first-child {
 
 @media only screen and (max-width: 380px) {
     .body-text {
-    margin: 6% 2% 6% 2%;
+    margin: 6% 3% 6% 3%;
 }}
 
 
@@ -976,6 +1023,13 @@ h5.moon {
     color: #ECEEAE;
 }
 
+@media only screen and (max-width: 600px) {
+    #floating-menu-bm {
+        display: none;
+    }
+}
+
+
 .period {
     color: #CFD7E5;
 }
@@ -987,6 +1041,12 @@ h5.moon {
     width: 100%;
     margin-top: 1em;
 }
+
+@media only screen and (max-width: 380px) {
+#signature {
+   margin-bottom: 30%;
+}
+    }
 
 #signature img {
     width: 30%;
