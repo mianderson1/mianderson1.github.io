@@ -9,49 +9,30 @@
 <body>
 
 <div class="navbar">
-    <a href="index.html">
-        <div id="logo">
+    <div id="logo">
+        <a href="index.html">
             <img src="source-images/logo.png" alt="m.a. designs logo">
-            <img src="source-images/logo-hover.png" alt="m.a. designs logo">
-        </div>
-    </a>
-</div>
-<!--
-    <div id="logotype">
-        <a href="home.html"><h5>m.a.designs</h5></a>
+        </a>
     </div>
--->
+</div>
 
+
+<div class="topnav">
     
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    
-<div class="topnav" id="myTopnav">
     <div class="topnav-text">
-            <a><h3>m.a. designs</h3></a>
+        <a><h6>m.a. designs</h6></a>    
           <a href="work.html"><h3>work.</h3></a>
           <a href="about.html"><h3>about.</h3></a>
           <a href="#contact-me.html"><h3>contact me.</h3></a>
     </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
 </div>
-
-
-    
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
     
 
     
@@ -81,6 +62,15 @@ function myFunction() {
 
       
     </div>
+    
+    <script>
+        var meatballs = document.querySelector('.meatballs');
+        var topnav = document.querySelector('.topnav');
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
+            topnav.classList.toggle('responsive')
+        })
+    </script>
     
 </body>
     
