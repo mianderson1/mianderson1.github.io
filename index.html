@@ -7,7 +7,7 @@
 </head>
 
     
-<body>
+<body style="background-color: indianred">
     
     <div id="home-home-block">
         <div id="home-block">
@@ -20,12 +20,31 @@
             <h1>m.a. designs</h1>
             <h2>visual + textual designer</h2>
             <div class="menu"><h2 class="menu">
-                <a href="work.html">work. </a>  
+                <a href="work.html">work. </a> 
                 <a href="about.html">about. </a> <a href="contact-me.html">contact me. </a>
             </h2>
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        $( document ).ready(function() { 
+            $( window ).resize();
+        });
+
+        $( window ).resize(function() {
+          var w = $( window ).width();
+          var h = $( window ).height();
+          var wspec = parseInt($( "#innerbody" ).css('width'));
+          var hspec = parseInt($( "#innerbody" ).css('height'));
+          if((w/h)>(wspec/hspec)) var scale = h/hspec;
+          else var scale = w/wspec;
+          $( "html" ).css('transform','scale('+scale+')');
+          $( "html" ).css('-ms-transform','scale('+scale+')');
+          $( "html" ).css('-webkit-transform','scale('+scale+')');
+          $( "html" ).css('-moz-transform','scale('+scale+')');
+        });
+        </script>
     
 </body>
     
