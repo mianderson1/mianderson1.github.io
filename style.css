@@ -375,7 +375,7 @@ h6 {
 
 #home-block h1 {
     text-align: center;
-    line-height: 0.2
+    line-height: 0.2;
 }
 
 @media only screen and (max-width: 900px) {
@@ -465,6 +465,8 @@ h6 {
 /*    width: 100%;*/
   height: 40%; /* use 100% here */
   position: relative;
+    text-align: justify;
+    text-justify: inter-character;
 }
    
 @media only screen and (max-width: 900px) {
@@ -499,12 +501,12 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+/*  text-align: center;*/
 }
 
 @media only screen and (max-width: 380px) {
     #home-home-block {
-        width: 100%
+        width: 100%;
     }}
 
 
@@ -547,6 +549,10 @@ a:hover #logo-home img:last-child {
 a:hover #logo-home img:first-child {
     display: none;
 }
+
+
+
+
 
 /* Work */
 
