@@ -989,6 +989,10 @@ position: relative;
 .mySlides {
   display: none;
 }
+/* Fix padding-bottom in slideshow */
+.mySlides img {
+    display: block;
+}
 
 /* Next & previous buttons */
 .prev, .next {
