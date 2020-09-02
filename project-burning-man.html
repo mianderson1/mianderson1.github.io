@@ -16,13 +16,33 @@
      </div>
 -->
     
-    <a href="index.html">
+
+    <div class="navbar">
         <div id="logo">
-            <img src="source-images/logo-moon.png" alt="m.a. designs logo" id="logo in yellow">
-            <img src="source-images/logo-hover.png" alt="m.a. designs logo">
-         </div>
-    </a>
+            <a href="index.html">
+                <img src="source-images/logo-moon.png" alt="m.a. designs logo">
+            </a>
+        </div>
+    </div>
+<div id="moon">
+<div class="topnav">
     
+    <div class="topnav-text">
+        <a><h6>m.a. designs</h6></a>    
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="contact-me.html"><h3>contact me.</h3></a>
+    </div>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
+</div>
+</div>
+  
     
 <!--
     <div id="logotype">
@@ -70,6 +90,15 @@
         <img src="source-images/burning-man-2.gif" alt="LED moon designed for burning man">
         
     </div>
+    
+      <script>
+            var meatballs = document.querySelector('.meatballs');
+            var topnav = document.querySelector('.topnav');
+            meatballs.addEventListener('click', function () {
+                meatballs.classList.toggle('close')
+                topnav.classList.toggle('responsive')
+            })
+        </script>
     
 </body>
     

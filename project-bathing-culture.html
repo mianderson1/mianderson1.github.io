@@ -9,12 +9,31 @@
 <body>
 
 
-    <a href="index.html">
-        <div id="logo">
+<div class="navbar">
+    <div id="logo">
+        <a href="index.html">
             <img src="source-images/logo.png" alt="m.a. designs logo">
-            <img src="source-images/logo-hover.png" alt="m.a. designs logo">
-         </div>
-    </a>
+        </a>
+    </div>
+</div>
+
+
+<div class="topnav">
+    
+    <div class="topnav-text">
+        <a><h6>m.a. designs</h6></a>    
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="contact-me.html"><h3>contact me.</h3></a>
+    </div>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
+</div>
     
     <div id="floating-menu">
         <div id="logotype">
@@ -60,6 +79,14 @@
         
     </div>
     
+    <script>
+        var meatballs = document.querySelector('.meatballs');
+        var topnav = document.querySelector('.topnav');
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
+            topnav.classList.toggle('responsive')
+        })
+    </script>
           
     
 </body>
