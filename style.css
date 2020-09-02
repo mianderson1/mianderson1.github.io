@@ -378,6 +378,12 @@ h6 {
     line-height: 0.2
 }
 
+@media only screen and (max-width: 900px) {
+#home-block h1 {
+    font-size: 5.05vw;
+}
+}
+
 @media only screen and (max-width: 500px) {
 #home-block h1 {
     font-size: 8vw;
