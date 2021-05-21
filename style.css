@@ -957,7 +957,7 @@ a:hover #logo-home img:first-child {
 
 .column-pandora {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 2.5%;
     width: 100%;
     height: auto;
@@ -965,7 +965,7 @@ a:hover #logo-home img:first-child {
 
 @media only screen and (max-width: 600px) {
 .column-pandora {
-    grid-gap: 3%;
+    grid-gap: 3.5%;
     }
 }
 
@@ -975,8 +975,21 @@ a:hover #logo-home img:first-child {
     margin-bottom: 7%;
 }
 
+#pandora-illustration {
+    margin-left:25%;
+    margin-right: 25%;
+}
 
+#pandora-illustration .screenshot {
+    border: none;
+}
 
+@media only screen and (max-width: 500px) {
+#pandora-illustration {
+    margin-left: 8%;
+    margin-right: 5%;
+    }
+}
 
 
 /* Slideshow container */
