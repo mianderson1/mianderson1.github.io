@@ -9,43 +9,118 @@
     
 <body>
     
-    <div id="home-home-block">
-        <div id="home-block">
-            <a href="work.html">
-                <div id="logo-home">
-                    <img src="source-images/logo.png" alt="m.a. designs logo">
-                    <img src="source-images/logo-hover.png" alt="m.a. designs logo">
-                 </div>
-            </a>
-            <h1>m.a. designs</h1>
-            <h2>web and graphic design</h2>
-            <div class="menu"><h2 class="menu">
-                <a href="work.html">work. </a> 
-                <a href="about.html">about. </a> <a href="contact-me.html">contact me. </a>
-            </h2>
-            </div>
+    <div class="navbar">
+    <div id="logo">
+        <a href="index.html">
+            <img src="source-images/logo.png" alt="m.a. designs logo">
+        </a>
+    </div>
+</div>
+
+
+<div class="topnav">
+    <a><h6>Mike Anderson</h6></a> 
+    <div class="topnav-text">
+			<a></a>
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="contact-me.html"><h3>contact me.</h3></a>
+    </div>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
         </div>
     </div>
+</div>
     
-    <script type="text/javascript">
-        $( document ).ready(function() { 
-            $( window ).resize();
-        });
+<div class="home">
+	<h2>Services & Expertise</h2>	
+	
+	<div class="home-intro-one">
+		<div class="column-home left">
+			<hr/>
+		</div>
+		<div class="column-home center"></div>
+		<div class="column-home right">	
+			<hr/>
+		</div>
+		
+	</div>
+	
+	<div class="home-intro">
+		
+		<div class="column-home left">
+			<p>Web & Graphic Design
+			<br>
+			Illustration
+			<br>
+			Layout
+			</p>
+		</div>
 
-        $( window ).resize(function() {
-          var w = $( window ).width();
-          var h = $( window ).height();
-          var wspec = parseInt($( "#innerbody" ).css('width'));
-          var hspec = parseInt($( "#innerbody" ).css('height'));
-          if((w/h)>(wspec/hspec)) var scale = h/hspec;
-          else var scale = w/wspec;
-          $( "html" ).css('transform','scale('+scale+')');
-          $( "html" ).css('-ms-transform','scale('+scale+')');
-          $( "html" ).css('-webkit-transform','scale('+scale+')');
-          $( "html" ).css('-moz-transform','scale('+scale+')');
-        });
-        </script>
-    
+		<div class="column-home center">	
+<!--
+			<br>
+			<br>
+			<br>
+-->
+<!--			<div class="plus"></div>-->
+			<div id="plus-two">+</div>
+		</div>
+
+		<div class="column-home right">	
+			<p>Content Writing
+			<br>
+			Presenting &<br>Teaching
+			</p>
+		
+		</div>
+
+	</div>
+	
+	
+	
+	
+
+	
+	
+	
+	</div>    
+
+	
+
+
+<div class="body-photos">
+	<div id="mobile-web-switch">
+		<img src="source-images/home-hero.png" alt="illustration">
+		<img src="source-images/home-hero-mobile.png" alt="illustration">
+	</div>	
+	
+</div>
+	
+
+	
+<script>
+        var meatballs = document.querySelector('.meatballs');
+        var topnav = document.querySelector('.topnav');
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
+            topnav.classList.toggle('responsive')
+        })
+    </script>
+          
+	
+<div class="footer">
+	<br>
+	<div class="footer-text">
+		<p>©2021 Mike Anderson.</p> 
+		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
+	</div>
+</div>
+	
 </body>
+
     
 </html>
