@@ -18,9 +18,9 @@
 
 
 <div class="topnav">
-    
+    <a><h6>Mike Anderson</h6></a> 
     <div class="topnav-text">
-        <a><h6>m.a. designs</h6></a>    
+			<a></a>
           <a href="work.html"><h3>work.</h3></a>
           <a href="about.html"><h3>about.</h3></a>
           <a href="contact-me.html"><h3>contact me.</h3></a>
@@ -34,34 +34,27 @@
     </div>
 </div>
     
-
     
-    
-    <div id="floating-menu">
-        <div id="logotype">
-            <a href="index.html"><h5>m.a.designs</h5></a>
-        </div>
 
-        <div id="menu">
-            <h5><a href="work.html">work<span class="period">.</span></a> 
-                <a href="about.html">about<span class="period">.</span></a> <a href="contact-me.html">contact me<span class="period">.</span></a>
-            </h5>
-        </div>
-    </div>
-    
-    
-    <div id="work">
-        <img src="source-images/header-contact.png" alt="project list">
-    </div>
+	<div class="page-header"><h1>Contact</h1></div>
 
-    <div class="body-text">
-       <div id="intro-paragraphs"><h2>Someday soon, a contact form will greet you here.</h2>
-        <p>Until that day, you can reach me at <a>mikeandersondesigner@gmail.com</a>.</p>
-
-       </div>
-
-      
-    </div>
+	<div class="body-text">
+       
+		
+		<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknkpevr" method="post">
+		  <fieldset id="fs-frm-inputs">
+			<label for="full-name"><p>Full Name</p></label>
+			<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+			<label for="email-address"><p>E-mail Address</p></label>
+			<input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+			<label for="message"><p>Message</p></label>
+			<textarea rows="5" name="message" id="message" placeholder="Your message here" required=""></textarea>
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+		  </fieldset>
+		  <input type="submit" value="Submit">
+		</form>
+	
+	</div>
     
     <script>
         var meatballs = document.querySelector('.meatballs');
@@ -72,6 +65,14 @@
         })
     </script>
     
+	
+	<div class="footer">
+	<br>
+	<div class="footer-text">
+		<p>©2021 Mike Anderson</p> 
+		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
+	</div>
+	</div>	
 </body>
     
 </html>
