@@ -266,6 +266,14 @@ h1 {
     color: #4A6899;
 }
 
+.body-text h1 {
+	font-size: 7em;
+	text-align: center;
+	color: #DEE8F8;
+	margin-block-end: 0.1em;
+	font-size: 13vw;
+	}
+
 h2 {
     font-family: Mont-Heavy, sans-serif;
     font-size: 21px;
@@ -1461,9 +1469,38 @@ h5.moon {
 
 /* About */
 
+#signature-two {
+	display: flex;
+/*	margin: auto;*/
+}
+
+#signature-two img {
+	width: 30%;
+}
+
+#signature-two img:first-child {
+	margin-left: auto;
+}
+
+#signature-two img:last-child {
+	margin-right: auto;
+}
+
+/*
+
+#signature-two first-child {
+	margin-right: 1em;
+}
+
+#signature-two last-child {
+	margin-left: 1em;
+}
+*/
+
 #signature {
     width: 100%;
     margin-top: 1em;
+	margin-bottom: 2vw;
 }
 
 @media only screen and (max-width: 380px) {
@@ -1503,6 +1540,7 @@ h5.moon {
 	height: 150px;
 	width: 100%;
 	background-color: #B3C6E5;
+	margin-top: 2vw;
 }
 
 .footer p {
@@ -1524,4 +1562,48 @@ h5.moon {
 	.footer-text {
 		margin: 0;
 	}
+}
+
+
+/*Contact Me*/
+
+fieldset {
+	border-color: #DEE8F8;
+	margin-bottom: 1em;
+}
+
+fieldset p {
+	margin-bottom: 0.5em;
+}
+
+input{
+	margin-bottom: 1.5em;
+	border-color: #DEE8F8;
+	background-color: #DEE8F8;
+	padding: 5px;
+	
+	font-family: Optima-Regular, sans-serif;
+    color: #4A6899;
+	font-size: 1em;
+	width: 100%;
+}
+
+#fs-frm-inputs input {
+	width: 97%;
+}
+
+textarea {
+	width: 90%;
+	margin: auto;
+	border-style: inset;
+	border-width: 2px;
+	border-color: #DEE8F8;
+	background-color: #DEE8F8;
+	margin-bottom: 3em;
+	padding: 5px;
+	
+	font-family: Optima-Regular, sans-serif;
+    color: #4A6899;
+	font-size: 1em;
+	width: 97%;
 }
