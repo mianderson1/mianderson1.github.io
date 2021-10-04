@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bathing Culture</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+
+<div class="navbar">
+    <div id="logo">
+        <a href="index.html">
+            <img src="source-images/logo.png" alt="m.a. designs logo">
+        </a>
+    </div>
+</div>
+
+
+<div class="topnav">
+    
+    <div class="topnav-text">
+        <a><h6>m.a. designs</h6></a>    
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="contact-me.html"><h3>contact me.</h3></a>
+    </div>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
+</div>
+    
+    <div id="floating-menu">
+        <div id="logotype">
+            <a href="index.html"><h5>m.a.designs</h5></a>
+        </div>
+
+        <div id="menu">
+            <h5><a href="work.html">work<span class="period">.</span></a> 
+                <a href="about.html">about<span class="period">.</span></a> <a href="contact-me.html">contact me<span class="period">.</span></a>
+            </h5>
+        </div>
+    </div>
+    
+    <div id="header-bc">
+        <img src="source-images/bathing-culture-1a.jpg" alt="computer with bathing culture post">
+    </div>
+   
+
+    
+    <div class="body-text">
+        <h3>BATHING CULTURE</h3>
+        <h4>Brand + Web Design</h4>
+        <p>I launched a new section of the blog for Bathing Culture, a soap company. For each post of the <i>Bath Tapes</i>, I curated a playlist, wrote the copy, and created the album art. I also designed a dynamic, adaptable logo that lives on each album cover.</p>
+        
+        <p>The imagery embraces Bathing Culture's psychedelic, nostalgic, and idiosyncratic aesthetic: washed-out colors, unconventional type choices, and a warm vibe.</p>
+    </div>
+    
+    <div class="body-photos">
+        <img src="source-images/bathing-culture-2.jpg" alt="phone with album art">
+        
+        <img src="source-images/bathing-culture-3.jpg" alt="phone with album art">
+        
+
+        
+        <div class= "youtube-embed">
+        <iframe class="iframe"  src="https://www.youtube.com/embed/yaATRxPMgsE">
+        </iframe>
+        </div>
+        
+        <img src="source-images/bathing-culture-5.jpg" alt="phone with album art">
+            
+        <img src="source-images/bathing-culture-6.jpg" alt="phone with album art"> 
+        
+    </div>
+    
+    <script>
+        var meatballs = document.querySelector('.meatballs');
+        var topnav = document.querySelector('.topnav');
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
+            topnav.classList.toggle('responsive')
+        })
+    </script>
+          
+    
+</body>
+    
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vicky the Vaccinator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+
+
+<div class="navbar">
+    <div id="logo">
+        <a href="index.html">
+            <img src="source-images/logo.png" alt="m.a. designs logo">
+        </a>
+    </div>
+</div>
+
+
+<div class="topnav">
+    <a><h6>Mike Anderson</h6></a> 
+    <div class="topnav-text">
+			<a></a>
+          <a href="work.html"><h3>work.</h3></a>
+          <a href="about.html"><h3>about.</h3></a>
+          <a href="contact-me.html"><h3>contact me.</h3></a>
+    </div>
+    <div class="meatball-container">
+        <div class="meatballs">
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+            <div class="meatball"></div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <div id="header-bc">
+        <img src="source-images/vicky-1.jpeg" alt="vicky the vaccinator pin">
+    </div>
+   
+
+    
+    <div class="body-text">
+        <h3>VICKY THE VACCINATOR</h3>
+        <h4>Illustration</h4>
+        <p>A group of doctors and volunteers asked me to volunteer my services for a vaccination effort in San Francisco. One of the doctors had graciously donated 40,000 doses of the COVID-19 vaccine to the uninsured in Tier 1B: teachers, food workers, and emergency services.</p>
+        
+        <p>The donors wanted a poster to brighten up the room and soothe the nerves of the patients, and pins to help separate volunteers from visitors. The resulting imagery pulls on Rosie the Riveter’s legacy; Vicky the Vaccinator, as we call her, galvanizes us to a common sense of purpose, to end this pandemic.</p>
+    </div>
+    
+    <div class="body-photos">
+        <img src="source-images/vicky-2.jpeg" alt="another vicky the vaccinator pin">
+        
+        <img src="source-images/vicky-3.jpeg" alt="vicky the vaccinator poster">
+        
+        <img src="source-images/vicky-4a.jpg" alt="pin on a doctor">
+            
+        <img src="source-images/vicky-5a.jpg" alt="pin on a volunteer"> 
+        
+    </div>
+    
+    <script>
+        var meatballs = document.querySelector('.meatballs');
+        var topnav = document.querySelector('.topnav');
+        meatballs.addEventListener('click', function () {
+            meatballs.classList.toggle('close')
+            topnav.classList.toggle('responsive')
+        })
+    </script>
+          
+   	<div class="footer">
+	<br>
+	<div class="footer-text">
+		<p>©2021 Mike Anderson</p> 
+		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
+	</div>
+	</div>	
+</body>
+    
+</html>
