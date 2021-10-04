@@ -42,7 +42,6 @@
 	font-family: Avenir-Roman;
 }
 
-<<<<<<< HEAD
 @font-face {
 	src: url("fonts/Georgia Bold Italic.ttf");
 	font-family: Georgia-Bold-Italic;
@@ -64,8 +63,6 @@
 }
 
 
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 /**
  * Fix fonts that render as bold in Firefox
  *
@@ -207,7 +204,6 @@ html {
 	height: 10px;
 	width: 10px;
 	margin: 2px;
-<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 550px) {
@@ -217,17 +213,6 @@ html {
 	}
 }
 
-=======
-}
-
-@media only screen and (max-width: 550px) {
-	.meatball {
-		width: 6px;
-		height: 6px;
-	}
-}
-
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 
 body {
     margin: 0px;
@@ -320,7 +305,6 @@ p {
         font-size: 5vw;
     }}
 */
-<<<<<<< HEAD
 
 .caption-header p {
 	font-family: Georgia-Bold, serif;
@@ -354,8 +338,6 @@ p {
 .addendum-caption p {
 	font-size: 1em;
 }
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 
 
 h1 {
@@ -371,10 +353,7 @@ h1 {
 	text-align: center;
 	color: #DEE8F8;
 	margin-block-end: 0.1em;
-<<<<<<< HEAD
 	line-height: 1;
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 /*	font-size: 13vw;*/
 	}
 
@@ -400,21 +379,12 @@ h2, .bootstrap-overrides h2 {
     margin-block-end: 0;
 	line-height: 1.4;
 	margin-top: 4em;
-<<<<<<< HEAD
 }
 
 h2:first-child, .bootstrap-overrides h2:first-child {
 	margin-top: 0;
 }
 
-=======
-}
-
-h2:first-child, .bootstrap-overrides h2:first-child {
-	margin-top: 0;
-}
-
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 
 
 @media only screen and (min-width: 550px) {
@@ -534,10 +504,7 @@ h5 {
     color: #4A6899;
 	margin-block-start: 0;
     margin-block-end: 0;
-<<<<<<< HEAD
 	font-size: 1em;
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 }
 
 #logotype h5 {
@@ -1439,28 +1406,18 @@ a:hover #logo-home img:first-child {
 #pandora-illustration {
     margin-left:25%;
     margin-right: 25%;
-<<<<<<< HEAD
 }
 
 #pandora-illustration .screenshot {
     border: none;
 }
 
-=======
-}
-
-#pandora-illustration .screenshot {
-    border: none;
-}
-
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 @media only screen and (max-width: 500px) {
 #pandora-illustration {
     margin-left: 8%;
     margin-right: 5%;
     }
 }
-<<<<<<< HEAD
 
 
 						/* Slideshow container */
@@ -1555,102 +1512,6 @@ a:hover #logo-home img:first-child {
 						*/
 
 
-=======
-
-
-						/* Slideshow container */
-						/*.slideshow-container {
-						  max-width: 1000px; */
-						/*
-							max-width: 100%;
-						  border: 0.5px solid #CFD7E5;
-							border-radius: 5px 5px 5px 5px;     margin-bottom: 2%;  
-						position: relative;
-						  margin: auto;
-						}
-							*/
-
-
-
-						/* Hide the images by default */
-						/*
-						.mySlides {
-						  display: none;
-						}
-						*/
-						/* Fix padding-bottom in slideshow */
-						/*
-						.mySlides img {
-							display: block;
-						}
-						*/
-
-						/* Next & previous buttons */
-						/*
-						.prev, .next {
-						  cursor: pointer;
-						  position: absolute;
-						  top: 50%;
-						  width: auto;
-						  margin-top: -22px;
-						  padding: 16px;
-						  color: white;
-						  font-weight: bold;
-						  font-size: 18px;
-						  transition: 0.6s ease;
-						  border-radius: 0 3px 3px 0;
-						  user-select: none;
-						}
-						*/
-
-
-						/* Position the "next button" to the right */
-						/*
-						.next {
-						  right: 0;
-						  border-radius: 3px 0 0 3px;
-						}
-						*/
-
-
-						/* On hover, add a black background color with a little bit see-through */
-						/*
-						.prev:hover, .next:hover {
-						  background-color: rgba(0,0,0,0.8);
-						}
-						*/
-
-						/* Caption text */
-						/*/.text {
-						  color: #f2f2f2;
-						  font-size: 15px;
-						  padding: 8px 12px;
-						  position: absolute;
-						  bottom: 8px;
-						  width: 100%;
-						  text-align: center;
-						}*/
-
-
-						/* BULLLETS HERE */
-
-						/* The dots/bullets/indicators */
-
-						/*
-						.dot {
-						  cursor: pointer;
-						  height: 15px;
-						  width: 15px;
-						  margin: 0 2px;
-						  background-color: #bbb;
-						  border-radius: 50%;
-						  display: inline-block;
-						  transition: background-color 0.6s ease;
-						}
-						*/
-
-
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 
 /* Fading animation */
 .fade {
@@ -1778,19 +1639,13 @@ h5.moon {
 
 #intro-paragraphs p {
 	text-align: justify;
-<<<<<<< HEAD
 	text-align: left;
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 }
 
 #intro-paragraphs h2 {
 	text-align: justify;
-<<<<<<< HEAD
 	text-align: left;
 	margin-bottom: 0.8em;
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 }
 
 #signature-two {
@@ -1908,11 +1763,7 @@ input{
 	background-color: #DEE8F8;
 	padding: 5px;
 	
-<<<<<<< HEAD
 	font-family: Georgia, serif;
-=======
-	font-family: Optima-Regular, sans-serif;
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
     color: #4A6899;
 	font-size: 1em;
 	width: 100%;
@@ -1932,11 +1783,7 @@ textarea {
 	margin-bottom: 3em;
 	padding: 5px;
 	
-<<<<<<< HEAD
 	font-family: Georgia, serif;
-=======
-	font-family: Optima-Regular, sans-serif;
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
     color: #4A6899;
 	font-size: 1em;
 	width: 97%;
@@ -1945,7 +1792,6 @@ textarea {
 
 
 
-<<<<<<< HEAD
 /* Cover Letter - Buck */
 
 
@@ -2082,6 +1928,4 @@ textarea {
 	margin-bottom: 1em;
 }
 
-=======
->>>>>>> d9c3c3bb1f710fddc71f25177996aa1e57f34ffd
 	
