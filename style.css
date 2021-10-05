@@ -113,6 +113,9 @@ html {
     width: 100%;
     }
 
+.topnav-text h3 {
+	text-align: center;
+}
 
 
 #logo, .bootstrap-overrides #logo {
@@ -453,25 +456,30 @@ h2.menu a:hover, .bootstrap-overrides h2.menu a:hover {
 h3, .bootstrap-overrides h3 {
     font-family: Mont-Heavy, sans-serif;
     font-size: 4vw;
+	font-size: 3em;
     color: #4A6899;
     margin: 0;
     text-align: left;
+	line-height: 1.1;
 }
 
 @media only screen and (max-width: 900px) {
     h3, .bootstrap-overrides h3 {
         font-size: 4.5vw;
+		font-size: 2.5em;
     }}
 
 
 @media only screen and (max-width: 600px) {
     h3, .bootstrap-overrides h3{
         font-size: 6vw;
+		font-size: 2.5em;
     }}
 
 @media only screen and (max-width: 380px) {
     h3, .bootstrap-overrides h3{
         font-size: 8vw;
+		font-size: 2em;
     }}
 
 
@@ -481,21 +489,25 @@ h4 {
     color: #4A6899;
     margin: 0% 0% 10% 0%;
     text-align: left;
+	font-size: 2em;
 }
 
 @media only screen and (max-width: 900px) {
     h4{
         font-size: 2.6vw;
+		font-size: 1.5em;
     }}
 
 @media only screen and (max-width: 600px) {
     h4{
         font-size: 3.5vw;
+		font-size: 1.5em;
     }}
 
 @media only screen and (max-width: 380px) {
     h4{
         font-size: 5vw;
+		font-size: 1em;
     }}
 
 
@@ -1321,7 +1333,7 @@ a:hover #logo-home img:first-child {
 .column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2.5%;
+    grid-gap: 2.5vw;
     width: 100%;
     height: auto;
 /*    margin-bottom: 3%;*/
@@ -1357,12 +1369,15 @@ a:hover #logo-home img:first-child {
 /*    border-radius: 5px 5px 5px 5px;*/
 }
     
+/*
 .single-column-screens {
 	margin-bottom: 2.5%;
 }
+*/
 
 .single-column-screens img {
 	display: block;
+	margin-bottom: 2.5%;
 }
 
 /*
