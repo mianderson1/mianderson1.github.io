@@ -455,7 +455,7 @@ h3, .bootstrap-overrides h3 {
     font-size: 4vw;
     color: #4A6899;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
 
 @media only screen and (max-width: 900px) {
@@ -480,7 +480,7 @@ h4 {
     font-size: 2.5vw;
     color: #4A6899;
     margin: 0% 0% 10% 0%;
-    text-align: center;
+    text-align: left;
 }
 
 @media only screen and (max-width: 900px) {
