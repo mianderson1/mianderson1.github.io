@@ -1,78 +1,93 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Studio Rosha</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Studio Rosha | Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
-    
+	
 <body>
 
-    
-<div class="navbar">
-    <div id="logo">
-        <a href="index.html">
-            <img src="source-images/logo.png" alt="m.a. designs logo">
-        </a>
-    </div>
-</div>
+	<header>		
+		<nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="work.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div id="white-burger"><span class="burger" onclick="openNav()">&#9776;</span></div>
+    </header>
 
 
-<div class="topnav">
-    <a><h6>Mike Anderson</h6></a> 
-    <div class="topnav-text">
-			<a></a>
-          <a href="work.html"><h3>Work</h3></a>
-          <a href="about.html"><h3>About</h3></a>
-          <a href="contact-me.html"><h3>Contact</h3></a>
-    </div>
-    <div class="meatball-container">
-        <div class="meatballs">
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-        </div>
-    </div>
-</div>
-
-    <div id="header-bc">
-        <img src="source-images/studio-rosha-1a.jpg" alt="laptop with studio rosha website open">
-    </div>
-    
-    
-    <div class="body-text">
-        <h3>STUDIO ROSHA</h3>
-        <h4>Brand + Web Design</h4>
-        <p>I re-designed the website for Studio Rosha, a one-man interior design practice based in San Francisco. Jason, the principal, wanted a warmer, more inviting and commercially-minded appearance — something less esoteric than his current site.</p>
-        <p>I’ve coded two-thirds of the website — which received fierce praise from Mr. Rosha — and will push it live in the next couple months.</p>
-    </div>
-    
-    <div class="body-photos">
- 
-        
-            <img src="source-images/studio-rosha-2a.png" alt="placeholder">
-
-                   
-    </div>
-    
-    
-    <script>
-        var meatballs = document.querySelector('.meatballs');
-        var topnav = document.querySelector('.topnav');
-        meatballs.addEventListener('click', function () {
-            meatballs.classList.toggle('close')
-            topnav.classList.toggle('responsive')
-        })
-    </script>
-    
-	<div class="footer">
-			<br>
-			<div class="footer-text">
-				<p>©2021 Mike Anderson</p> 
-				<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
-			</div>
-		</div>	
+	<div class="hero">
+		<div class="logotype">
+			<a href="index.html"><p>Mike Anderson<br>
+			Visual Designer & Illustrator</p></a>
+		</div>
 	
+		<img src="source-images/studio-rosha-1c.jpg">
+		<h6>Studio Rosha</h6>
+	</div>
+	
+	
+	<div class="margin-content">
+	
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>BRIEF</h3>
+				<h1>How do you make an interior designer's esoteric aesthetic universal?</h1>
+				<p>Studio Rosha wants to appeal to a broader client base&mdash;while also presenting a high-brow, esoteric aesthetic. I'm currenly creating a Brand Book and re-designing a website that can balance those two opposing goals.
+				</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<h3>DISCIPLINES</h3>
+				<h4>Brand Identity</h4>
+				<h4>Web Design</h4>
+				<h4>Collateral</h4>
+			</div>	
+		</div>
+
+		<div class="project-photos-grid">
+			<div class="grid-photo">
+					<img src="source-images/studio-rosha-8a.jpg">
+			</div>
+			<div class="grid-text">
+				<div class="caption-no-top"><p>I designed this newsletter for Studio Rosha's January 2021 marketing push.</p></div>
+			</div>
+		</div>
+
+		<div class="project-photos-single">
+				<img src="source-images/studio-rosha-2b.png">
+
+		</div>
+	</div>
+	
+	<div class="next-project">
+		<a href="project-the-quietus.html"><div class="next-left"><h3>&larr; The Quietus</h3></div></a>
+		<a href="project-sunday-tirio.html"><div class="next-right"><h3>Sunday Tirio Designs &rarr;</h3></div></a>
+	</div>
 </body>
-    
-</html>
+	
+<script>
+	
+	function openNav() {
+    document.getElementById("main-nav").style.height = "100%";
+}
+
+	function closeNav() {
+		document.getElementById("main-nav").style.height = "0%";
+	}
+	
+</script>
+	
+</html>	
+	
+	
+	
