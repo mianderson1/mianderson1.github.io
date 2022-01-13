@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-<title>Mike Anderson</title>
+<title>Mike Anderson | About</title>
 <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 	
@@ -21,35 +21,50 @@
         <span class="burger" onclick="openNav()">&#9776;</span>
     </header>
 	
-	
-	<div class="logotype">
+
+
+	<div class="hero">
+		<div class="logotype-black">
 			<a href="index.html"><p>Mike Anderson<br>
 			Visual Designer & Illustrator</p></a>
+		</div>
+		<img src="source-images/about-1c.jpg">
 	</div>
 	
-	<video id="background-video" autoplay loop muted poster="ripple_poster.jpg">
-  		<source src="source-images/index-1b.mp4" type="video/mp4">
-	</video>
-		
 	
 	<div class="margin-content">
-	
-		<div class="home-intro">
-				<div id="home-intro-first"><h1>As a former writer, my designs are equally concerned with text as they&nbsp;are with imagery&mdash;my work is the bridge between the two.</h1></div>
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>ABOUT MIKE</h3>
+				<h1>I solve communications problems from a multi-discipinary perspective.</h1>
+				<p>Because I know audience from many different angles. After earning my English Literature degree from a top 10 liberal arts college, I began my career as a content writer and marketer. I wrote full-time for NerdWallet in its infancy and executed on the company’s most successful SEO marketing strategy to date. Later, I joined Upworthy as a Content Strategist and, for the last five years, I’ve worked in Content Design at Pandora.</p>
 
-				<h1>I’m currently a Content Designer at Pandora and a freelance Brand/Web Designer.</h1>
-
-				<p>Formerly a Content Strategist at Upworthy and a Writer/Content Marketer at NerdWallet. Past clients include Bathing Culture, Studio Rosha, Consequence of Sound and SF Weekly.</p>
-
-				<a href="work.html"><button class="button button5">See Work</button></a>
+				<p>Three years ago, I launched my freelance career as a visual designer. I’d earned a minor in Art in college, and with my writing background, design offered the perfect blend of visual craft, textual storytelling, and audience analysis.</p>
 
 
+				<p>Interested in working together? Please reach out.</p> 
+
+				<a href="contact.html"><button class="button button5">Contact</button></a>
+
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<h3>SKILLS</h3>
+				<div class="skills">
+					<h4>Visual Design in Photoshop, Illustrator, InDesign & After Effects</h4>
+					<h4>Prototyping in Sketch, Figma, and Adobe XD</h4>
+					<h4>Digital Illustration</h4>
+					<h4>Copywriting</h4>
+					<h4>Content Marketing & Content Strategy</h4>
+					<h4>Frontend Development</h4>
+				</div>
+			</div>	
 		</div>
+	</div>
 
-	
-	</div>	
-
-	
 
 </body>
 	
@@ -63,6 +78,16 @@
 		document.getElementById("main-nav").style.height = "0%";
 	}
 	
+</script>
+	
+<script>
+	$("#slider").on("input change", (e)=>{
+	  const sliderPos = e.target.value;
+	  // Update the width of the foreground image
+	  $('.foreground-img').css('width', `${sliderPos}%`)
+	  // Update the position of the slider button
+	  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+	});
 </script>
 	
 </html>	
