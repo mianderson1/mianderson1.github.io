@@ -1,90 +1,186 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The Quietus</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>The Quietus</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
-    
-<body>
-<div class="navbar">
-    <div id="logo">
-        <a href="index.html">
-            <img src="source-images/logo.png" alt="m.a. designs logo">
-        </a>
-    </div>
-</div>
-
-
-<div class="topnav">
-    <a><h6>Mike Anderson</h6></a> 
-    <div class="topnav-text">
-			<a></a>
-          <a href="work.html"><h3>Work</h3></a>
-          <a href="about.html"><h3>About</h3></a>
-          <a href="contact-me.html"><h3>Contact</h3></a>
-    </div>
-    <div class="meatball-container">
-        <div class="meatballs">
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-        </div>
-    </div>
-</div>
-
-    <div id="header-bc">
-        <img src="source-images/the-quietus-1a.jpg" alt="laptops with the quietus' designs">
-    </div>
-    
-
-    
-    <div class="body-text">
-        <h3>THE QUIETUS</h3>
-        <h4>Web Design</h4>
-        <p>I re-designed <a href="https://thequietus.com/"><i>The Quietus</i></a> — a high-brow, pop-culture news & reviews site — on Wix, for a Web Design class in April 2019. The publication emphasizes text and exposition over anything commercial — they are the Anti-Listicle Website — and too often at the expense of readability (see the original design in the photo above, on the left, for an example of its overwhelming character).</p>
-        <p>My <a href="https://michaeldenefeander.wixsite.com/mysite">re-design</a> gives this iconoclastic brand a more elegant, accessible — yet still subdued — appearance, so as not to distract from the writers’ work.</p>
-    </div>
-    
-    <div class="body-photos-narrow">
-        
-        <div class="single-column-screens">
-        
-			<img src="source-images/the-quietus-1afterb.png" alt="the quietus re-design" class="screenshot">
-			<img src="source-images/the-quietus-2a.gif" alt="the quietus re-design" class="screenshot">
-
-          <img src="source-images/the-quietus-3a.png" alt="the quietus re-design" class="screenshot">
-        </div>
-        
-        <div class="column">
-            <img src="source-images/the-quietus-7a.jpg" alt="the quietus re-design" class="screenshot">
-            
-             <img src="source-images/the-quietus-8a.jpg" alt="the quietus re-design" class="screenshot">
-        </div>
-        
-
-       
-        
-    </div>
-    
-    
-    <script>
-        var meatballs = document.querySelector('.meatballs');
-        var topnav = document.querySelector('.topnav');
-        meatballs.addEventListener('click', function () {
-            meatballs.classList.toggle('close')
-            topnav.classList.toggle('responsive')
-        })
-    </script>
-    
-<div class="footer">
-	<br>
-	<div class="footer-text">
-		<p>©2021 Mike Anderson</p> 
-		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
-	</div>
-</div>
 	
+<body>
+
+	<header>
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="work.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+	
+
+
+	<div class="hero">
+		<div class="logotype">
+			<a href="index.html"><p>Mike Anderson<br>
+			Visual Designer & Illustrator</p></a>
+		</div>
+		<img src="source-images/the-quietus-1c.jpg">
+		<h6>The Quietus</h6>
+	</div>
+	
+	<div class="margin-content">
+	
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>BRIEF</h3>
+				<h1>How do you give a sleek digital presence to a high-brow brand that resists accessibility? My re-design maintains tQ’s sophistication while re-centering the user.</h1>
+				<p><a href="https://michaeldenefeander.wixsite.com/mysite">The Quietus</a> is widely respected in digital music communities for their incisive opinions. The publication emphasizes text and exposition over anything commercial — they are the Anti-Listicle Website — and too often at the expense of readability. I took on this difficult brand for a class project in the spring of 2019.</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<h3>DISCIPLINES</h3>
+				<h4>Brand Identity</h4>
+				<h4>Logo Design</h4>
+				<h4>Web Design</h4>
+				<h4>Copywriting</h4>
+			</div>	
+		</div>
+
+
+		<div class="project-photos-single">
+
+				<img loading="lazy" src="source-images/the-quietus-2d.gif" loading="lazy">
+			</div>
+
+
+		<div class="project-text-body-grid-top">
+			<div class="grid-text">
+				<p>The original logo felt dated&mdash;most egregiously, the publication’s URL sits at the bottom of the logotype, as if this were 1998&mdash;so we gave the mark a clean refresh.</p>
+
+				<div class="caption-full"><p>The old logo’s thick brackets recall old literature and metal music&mdash;apt connoations for a high-brow music reviews site. But the high contrast of the thick and thin strokes and all-caps make the brand feel severe, so we replaced with a cleaner&mdash;but still literary&mdash;sans-serif.</p></div>
+				
+			</div>
+
+
+			<div class="grid-photo-bottom">
+				<div class="ba-slider">
+				  <img loading="lazy" src="source-images/the-quietus-11.png" alt="">
+
+				  <div class="resize">
+					<img loaindg="lazy" src="source-images/the-quietus-10.png" alt="">
+
+				  </div>
+				  <span class="handle"></span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="project-text-body-grid-bottom"></div>
+		
+	</div>
+
+		<div class="body-black">
+			<div class="project-photos-grid">
+				<div class="grid-photo">
+					<img src="source-images/the-quietus-12.png">
+				</div>
+				<div class="grid-text">
+					<div class="caption"><p>The new tQ color scheme embraces simplicity, with the majority of its imagery in black and white. Old Rose and Genoa accents give the brand vibrance and greater visual interest.</p></div>
+				</div>
+			</div>
+			<div class="project-photos-grid">
+				<div class="grid-photo">
+					<img src="source-images/the-quietus-7a.jpg">
+				</div>
+				<div class="grid-photo">
+					<img src="source-images/the-quietus-8a.jpg">
+
+				</div>
+			</div>
+
+		</div>
+	
+	<div class="margin-content">
+
+			<div class="project-text-body-grid-top">
+				<div class="grid-text">
+					<p>We’ve selected Futura Medium as the workhorse header font: It’s stylish, modern and versatile.</p>
+					<p>We needed to amplify the brand’s vitality on its featured articles and hero images, though, and Futura alone would not do the tQ justice. We turned to the logotype, Bangla MN, for more expressive headers on the site’s hero images.</p>
+				</div>
+
+				<div class="grid-photo-bottom">
+					<img src="source-images/the-quietus-13.png">
+
+					<div class="caption-full"><p>Our h1 type, Bangla MN Italics, sits on the photo of Trent Reznor. The typeface’s tall x-height and large counters give the tQ’s voice much more assertiveness than Futura could (as pictured in our h2 and h3 type).</p></div>
+				</div>
+			</div>
+
+			<div class="project-photos-grid">
+				<div class="grid-text">
+
+				</div>
+
+				<div class="grid-photo">
+
+				</div>
+			</div>
+
+			<div class="project-photos-single">
+				<img src="source-images/the-quietus-4c.jpg">
+			</div>
+		
+		
+	</div>
+	
+	<div class="next-project">
+		<a href="project-bathing-culture.html"><div class="next-left"><h3>&larr; Bathing Culture</h3></div></a>
+		<a href="project-studio-rosha.html"><div class="next-right"><h3>Studio Rosha &rarr;</h3></div></a>
+	</div>
 </body>
-    
-</html>
+	
+<script>
+	
+	function openNav() {
+    document.getElementById("main-nav").style.height = "100%";
+}
+
+	function closeNav() {
+		document.getElementById("main-nav").style.height = "0%";
+	}
+	
+</script>
+	
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
+	
+
+</html>	
