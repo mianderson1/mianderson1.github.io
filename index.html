@@ -1,126 +1,71 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, max-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
-
-    
+	
 <body>
-    
-<div class="navbar">
-    <div id="logo">
-        <a href="index.html">
-            <img src="source-images/logo.png" alt="m.a. designs logo">
-        </a>
-    </div>
-</div>
 
+	<header>
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="work.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
 
-<div class="topnav">
-    <a><h6>Mike Anderson</h6></a> 
-    <div class="topnav-text">
-			<a></a>
-          <a href="work.html"><h3>Work</h3></a>
-          <a href="about.html"><h3>About</h3></a>
-          <a href="contact-me.html"><h3>Contact</h3></a>
-    </div>
-    <div class="meatball-container">
-        <div class="meatballs">
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-        </div>
-    </div>
-</div>
-    
-<div class="home">
-	<h2>Services & Expertise</h2>	
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
 	
-	<div class="home-intro-one">
-		<div class="column-home left">
-			<hr/>
-		</div>
-		<div class="column-home center"></div>
-		<div class="column-home right">	
-			<hr/>
-		</div>
-		
+	
+	<div class="logotype">
+			<a href="index.html"><p>Mike Anderson<br>
+			Visual Designer & Illustrator</p></a>
 	</div>
 	
-	<div class="home-intro">
+	<video id="background-video" autoplay loop muted poster="ripple_poster.jpg">
+  		<source src="source-images/index-1b.mp4" type="video/mp4">
+	</video>
 		
-		<div class="column-home left">
-			<p>Web & Graphic Design
-			<br>
-			Illustration
-			<br>
-			Layout
-			</p>
+	
+	<div class="margin-content">
+	
+		<div class="home-intro">
+				<div id="home-intro-first"><h1>As a former writer, my designs are equally concerned with text as they&nbsp;are with imagery&mdash;my work is the bridge between the two.</h1></div>
+
+				<h1>I’m currently a Content Designer at Pandora and a freelance Brand/Web Designer.</h1>
+
+				<p>Formerly a Content Strategist at Upworthy and a Writer/Content Marketer at NerdWallet. Past clients include Bathing Culture, Studio Rosha, Consequence of Sound and SF Weekly.</p>
+
+				<a href="work.html"><button class="button button5">See Work</button></a>
+
+
 		</div>
 
-		<div class="column-home center">	
-<!--
-			<br>
-			<br>
-			<br>
--->
-<!--			<div class="plus"></div>-->
-			<div id="plus-two">+</div>
-		</div>
-
-		<div class="column-home right">	
-			<p>Content Writing
-			<br>
-			Presenting &<br>Teaching
-			</p>
-		
-		</div>
-
-	</div>
 	
-	
-	
-	
-
-	
-	
-	
-	</div>    
-
-	
-
-
-<div class="body-photos">
-	<div id="mobile-web-switch">
-		<img src="source-images/home-hero.png" alt="illustration">
-		<img src="source-images/home-hero-mobile.png" alt="illustration">
 	</div>	
-	
-</div>
+
 	
 
+</body>
 	
 <script>
-        var meatballs = document.querySelector('.meatballs');
-        var topnav = document.querySelector('.topnav');
-        meatballs.addEventListener('click', function () {
-            meatballs.classList.toggle('close')
-            topnav.classList.toggle('responsive')
-        })
-    </script>
-          
 	
-<div class="footer">
-	<br>
-	<div class="footer-text">
-		<p>©2021 Mike Anderson</p> 
-		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
-	</div>
-</div>
-	
-</body>
+	function openNav() {
+    document.getElementById("main-nav").style.height = "100%";
+}
 
-    
-</html>
+	function closeNav() {
+		document.getElementById("main-nav").style.height = "0%";
+	}
+	
+</script>
+	
+</html>	
+	
+	
+	
