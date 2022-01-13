@@ -1,105 +1,94 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Work</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, max-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Projects | Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
 </head>
-    
-<body>
-
-<div class="navbar">
-    <div id="logo">
-        <a href="index.html">
-            <img src="source-images/logo.png" alt="m.a. designs logo">
-        </a>
-    </div>
-</div>
-
-
-<div class="topnav">
-    <a><h6>Mike Anderson</h6></a> 
-    <div class="topnav-text">
-			<a></a>
-          <a href="work.html"><h3>Work</h3></a>
-          <a href="about.html"><h3>About</h3></a>
-          <a href="contact-me.html"><h3>Contact</h3></a>
-    </div>
-    <div class="meatball-container">
-        <div class="meatballs">
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-            <div class="meatball"></div>
-        </div>
-    </div>
-</div>
-    
-    
-    <div class="page-header">
-		<h1>Work</h1>
-    </div>
-
-    <div id="project-list">
-        
-        <div class="project">
-            <a href="project-pandora.html">
-                <img src="source-images/work-pandora-2.png" alt="slide deck from pandora">
-                <h1>PANDORA</h1>
-            </a>
-        </div>
-        
-        
-        <div class="project">
-            <a href="project-vicky.html">
-                <img src="source-images/work-vicky.png" alt="phone with bathing culture art">
-                <h1>VICKY THE VACCINATOR</h1>
-            </a>
-        </div>
-        
-        <div class="project">
-            <a href="project-bathing-culture.html">
-                <img src="source-images/work-bathing-culture.jpg" alt="phone with bathing culture art">
-                <h1>BATHING CULTURE</h1>
-            </a>
-        </div>
-        
-        
-        <div class="project">
-            <a href="project-studio-rosha.html">
-                <img src="source-images/work-studio-rosha.jpg" alt="couch from studio rosha's design of the shazam offices">
-                <h1>STUDIO ROSHA</h1>
-            </a>
-        </div>
-        
-        
-        <div class="project">
-            <a href="project-the-quietus.html">
-                <img src="source-images/work-quietus-2.jpg" alt="edited photo from the quietus">
-                <h1>THE QUIETUS</h1>
-            </a>
-        </div>
-        
-    </div>
-    
-
-    <script>
-        var meatballs = document.querySelector('.meatballs');
-        var topnav = document.querySelector('.topnav');
-        meatballs.addEventListener('click', function () {
-            meatballs.classList.toggle('close')
-            topnav.classList.toggle('responsive')
-        })
-    </script>
-
-<div class="footer">
-	<br>
-	<div class="footer-text">
-		<p>©2021 Mike Anderson</p> 
-		<p>Coded, written, and designed by the man himself. Do you want to learn more about a project? Or work together? E-mail me at mikeandersondesigner@gmail.com</p>
-	</div>
-</div>	
 	
+<body>
+	
+	<header>
+		
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="work.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
 
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+
+	
+	<div class="blank-space">
+		
+		<div class="logotype-no-hero">
+			<a href="index.html"><p>Mike Anderson<br>
+			Visual Designer & Illustrator</p></a>
+		</div>
+	
+	</div>
+
+	
+	<div class="margin-content">
+	
+	
+		<div class="page-title"><h1>Select Works & Illustrations</h1></div>
+
+
+
+		<div class="projects">
+			<div class="project-grid-item">
+				<h2><a href="project-yes.html">YES</a></h2>
+				<a href="project-yes.html"><img src="source-images/work-yes.jpg"></a>
+			</div>	
+
+			<div class="project-grid-item">
+				<h2><a href="project-bathing-culture.html">BATHING CULTURE</a></h2>
+				<a href="project-bathing-culture.html"><img src="source-images/work-bathing-culture2.png"></a>
+			</div>	
+
+			<div class="project-grid-item">
+				<h2><a href="project-the-quietus.html">THE QUIETUS</a></h2>
+				<a href="project-the-quietus.html"><img src="source-images/work-quietus2.png"></a>
+			</div>	
+
+			<div class="project-grid-item">
+				<h2><a href="project-studio-rosha.html">STUDIO ROSHA</a></h2>
+				<a href="project-studio-rosha.html"><img src="source-images/work-studio-rosha2.png"></a>
+			</div>	
+
+			<div class="project-grid-item">
+				<h2><a href="project-sunday-tirio.html">SUNDAY TIRIO DESIGNS</a></h2>
+				<a href="project-sunday-tirio.html"><img src="source-images/work-sunday-tirio.png"></a>
+			</div>	
+
+			<div class="project-grid-item">
+				<h2><a href="project-illustrations.html">ILLUSTRATIONS</a></h2>
+				<a href="project-illustrations.html"><img src="source-images/work-illustrations.png"></a>
+			</div>	
+
+		</div>
+	</div>
 </body>
-    
-</html>
+	
+<script>
+	
+	function openNav() {
+    document.getElementById("main-nav").style.height = "100%";
+}
+
+	function closeNav() {
+		document.getElementById("main-nav").style.height = "0%";
+	}
+	
+</script>
+	
+	
+</html>	
+	
+	
+	
