@@ -18,7 +18,25 @@
 
 @media only screen and (max-width: 750px) {
 	#background-video {position: static;
-		height: auto;}
+		height: auto;
+		display: none;}
+}
+
+
+.background-gif {
+	background-image: url("source-images/index-1b.gif");
+	width: 100%;
+	height: 400px;
+	background-position: right;
+	background-repeat: none;
+	background-size: cover;
+	
+}
+
+@media only screen and (min-width: 750px) {
+	.background-gif{
+		display: none;
+	}
 }
 
 
@@ -28,7 +46,7 @@
 	padding-bottom: 200px
 }
 
-@media only screen and (min-width: 750px) {.home-intro {width: 650px;}}
+@media only screen and (min-width: 800px) {.home-intro {width: 685px;}}
 
 
 
@@ -69,7 +87,7 @@ body {
 }
 
 .hero .logotype p:hover, .hero .logotype-black p:hover, .logotype-no-hero p:hover, .logotype a p:hover {
-	color: #6086C5;
+ 	font-family: AZSerifBold;
 }
 
 
@@ -116,6 +134,11 @@ body {
 @font-face {
     src: url("fonts/EduArizonaSerif-Bold.woff2");
     font-family: AZSerifBold;
+}
+
+@font-face {
+	src: url("fonts/EduArizonaSerif-Regular.woff2");
+	font-family: AZSerifRegular;
 }
 
 @font-face {
@@ -192,12 +215,12 @@ h1 {
 	margin-block-end: 0em;
 /*	font-size: 2.5em;*/
 	font-weight: normal;
-	font-size: 1.9em;
+	font-size: 1.95em;
 	margin-bottom: 0.5em;
 }
 
 @media only screen and (min-width: 750px) {
-	h1 {font-size: 2.4em;}
+	h1 {font-size: 2.4em; font-size: 2.5em;}
 }
 
 
@@ -205,6 +228,12 @@ h1 {
 	letter-spacing: -1px;
 	margin-bottom: 1em;
 	font-size: 2.2em;
+	font-size: 2.4em;
+	font-size: 2.1em;
+}
+
+@media only screen and (min-width: 750px) {
+	.home-intro h1 {font-size:2.5em;}
 }
 
 .body-black h1 {
@@ -297,6 +326,14 @@ h6 {
 	position: absolute;
 	z-index: 100;
 	margin-left: 7.5vw;
+}
+
+.margin-content h6 {
+	font-family: AZSerifRegular;
+	font-weight: normal;
+	color: black;
+	font-size: 3.5em;
+	margin-top: 150px; 
 }
 
 
@@ -641,6 +678,7 @@ p a:hover {
 /*		width: 50%;*/
 /*		height: 150px;*/
 			width: 100%;
+			height: auto;
 }
 		 .container .img {
 			 position: absolute;
