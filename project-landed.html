@@ -2,8 +2,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-<title>Mike Anderson | About</title>
+<title>Landed | Mike Anderson</title>
 <link rel="stylesheet" type="text/css" href="style2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 	
 <body>
@@ -12,7 +14,8 @@
         <nav id="main-nav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="work.html">Projects</a>
+                <a href="index.html">Home</a>
+				<a href="work.html">Work</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -28,44 +31,58 @@
 			<a href="index.html"><p>Mike Anderson<br>
 			Visual Designer & Illustrator</p></a>
 		</div>
-		<img src="source-images/about-1e.jpg">
+		<img src="source-images/landed-1.jpg">
 	</div>
 	
-	
 	<div class="margin-content">
+		<h6>Landed</h6>	
 		<div class="project-text-intro">
 			<div class="grid-item">
-				<h3>ABOUT MIKE</h3>
-				<h1>I solve communications problems from a multi-discipinary perspective.</h1>
-				<p>I know audience from many different angles. After earning my English Literature degree from a top 10 liberal arts college, I began my career as a content writer and marketer. I wrote full-time for NerdWallet in its infancy and executed on the company’s most successful SEO marketing strategy to date. Later, I joined Upworthy as a Content Strategist and, for five years, worked in Content Design at Pandora.</p>
+				<h3>BRIEF</h3>
+				<h1>How do you simplify the customer journey for the most intimidating and complex purchase decision in someone's lifetime?</h1>
+				<p>Homebuying is more than a significant financial investment; it's an emotional experience as well. At Landed, we wanted specifically to help essential professionals through that process. When I joined the company in April 2022, our core product was down payment support: Up to $120k toward an eligible customer’s down payment.</p>
 
-				<p>Three years ago, I launched my freelance career as a visual designer. I’d earned a minor in Art in college, and with my writing background, design offered the perfect blend of visual craft, textual storytelling, and audience analysis. In April 2022, I joined Landed as their second design hire. I focus primarily on marketing and product design, and I've regularly received praise for my ability to traverse the intersection of interface and content design.</p>
+				<p>As interest rates rose this past summer and investors became nervous about the housing market, we ran out funds for our down payment program. So, we had to pivot: Landed became the "homebuying navigator" for essential professionals. In other words, Landed 2.0 would educate essential professionals on the homebuying process and connect them to the resources they needed to buy a home.</p>
 
-				<p>Interested in working together? Please reach out.</p> 
-
-				<a href="contact.html"><button class="button button5">Contact</button></a>
-
+				<p>The work below includes my executions of that new product and brand positioning, as well as marketing materials that I developed to help Landed earn more investors and funding.</p>
 			</div>
 
 			<div class="grid-item"></div>
 
 
 			<div class="grid-item">
-				<h3>SKILLS</h3>
-				<div class="skills">
-					<h4>Visual Design in Photoshop, Illustrator, InDesign & After Effects</h4>
-					<h4>Prototyping in Sketch, Figma & Adobe XD</h4>
-					<h4>Digital Illustration</h4>
-					<h4>Copywriting</h4>
-					<h4>Content Marketing & Content Strategy</h4>
-					<h4>Front-end Development</h4>
-					<h4>Project Management</h4>
-				</div>
+				<h3>DISCIPLINES</h3>
+				<h4>Marketing Design</h4>
+				<h4>Product Design</h4>
+				<h4>Copywriting</h4>
 			</div>	
 		</div>
+
+
+		<div class="project-photos-single">
+
+				<img loading="lazy" src="source-images/landed-2.png" alt="new designs coming next week">
+		</div>
+		
+		<div class="project-text-body-grid-normal">
+		
+			<div class="grid-text">
+				<p>Would you like to see samples from Landed while I build out this page? Please <a href="mailto:mikeandersondesigner@gmail.com">e-mail me</a> and I'm happy to provide.</p>
+			</div>
+			
+			<div class="grid-text">
+			</div>
+		
+		
+		</div>
+	</div>
+		
+	<div class="next-project">
+		<a href="project-illustrations.html"><div class="next-left"><h3>&larr; Illustrations</h3></div></a>
+		<a href="project-yes.html"><div class="next-right"><h3>Yes &rarr;</h3></div></a>
 	</div>
 
-
+		
 </body>
 	
 <script>
@@ -80,17 +97,27 @@
 	
 </script>
 	
-<script>
-	$("#slider").on("input change", (e)=>{
-	  const sliderPos = e.target.value;
-	  // Update the width of the foreground image
-	  $('.foreground-img').css('width', `${sliderPos}%`)
-	  // Update the position of the slider button
-	  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
-	});
-</script>
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
 	
+
 </html>	
-	
-	
-	
