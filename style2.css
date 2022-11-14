@@ -102,7 +102,12 @@ body {
 }
 
 #moon-space {
-	height: 30px;
+	height: 0;
+}
+
+
+@media only screen and (min-width: 750px) {
+	#moon-space{height:30px}
 }
 
 .page-title {
@@ -172,6 +177,8 @@ p {
 	line-height: 130%;
 }
 
+p:last-child {margin-bottom: 0;}
+
 .hero .logotype p {
 	color: white;
 	margin-top: 0;
@@ -181,14 +188,20 @@ p {
 	color:black;
 }
 
-.caption p, .caption-full p, .caption-no-top p {
+.caption p, .caption-full p, .caption-no-top p, .caption-project-photos-single p, .caption-project-photos-single-right p {
 	font-size: 1em;
 	
 }
 
-.caption p, .caption-full p {
+.caption p, .caption-full p, .caption-project-photos-single p, .caption-project-photos-single-right p {
 	margin-top: 1em;
 }
+
+.caption-project-photos-single p, .caption-project-photos-single-right p {
+	margin-bottom: 2.5em;
+}
+
+
 
 .caption-no-top p {
 	margin-top: 0;
@@ -317,7 +330,7 @@ h6 {
 	font-family: AZSerifBold;
 	font-weight: normal;
 	color: white;
-	bottom: 1.5vw;
+	bottom: 1.5em;
 	font-size: 2.4em;
 	margin-block-start: 0;
 	margin-block-end: 0;
@@ -519,6 +532,14 @@ p a:hover {
 			margin-bottom: 3em;}
 
 
+/*
+		.project-photos-single {
+			
+			margin-bottom: 2.5em;
+			}
+*/
+
+
 		.project-photos-single img {
 			width: 100%;
 			margin-bottom: 7.5vw;}
@@ -528,31 +549,43 @@ p a:hover {
 			.project-photos-single img {margin-bottom: 2.5vw;}
 		}
 
-		.project-photos-grid {
+		.project-photos-grid, .project-photos-grid-image-right, .project-photos-grid-image-left {
 			display: grid;
-			grid-template-columns: 1fr;
-			margin-bottom: 2.5vw;
+			margin-bottom: 2.5em;
 
 		}
 
-		.project-photos-grid img {
+
+		.project-photos-grid img, .project-photos-grid-image-right img {
 			width: 100%;
+			margin-top: 2.5em;
+		}
+
+		.project-photos-grid-image-left img {
+			width: 100%;
+			margin-bottom: 2.5em;
 		}
 		
+		@media only screen and (min-width: 750px) {.project-photos-grid img, .project-photos-grid-image-right img {
 		
+			margin-top: 0;
+		}	}
+		
+/*
 		.grid-photo {
 			margin-bottom: 7.5vw;
 		}
+*/
 		
 		.grid-photo-double {
-			margin-top: 7.5vw;
-			margin-bottom: 2.5vw;
+			margin-top: 0;
+			margin-bottom: 2.5em;
 		}
 
 
 		@media only screen and (min-width: 750px) {
-			.grid-photo {margin-bottom: 2.5vw;}
-			.grid-photo-double {margin-top: 2.5vw;}
+			.grid-photo {margin-bottom: 2.5em;}
+			.grid-photo-double {margin-top: 2.5em; }
 		}
 
 
@@ -560,7 +593,7 @@ p a:hover {
 
 
 		.grid-photo-bottom {
-			margin-top: 5vw;
+			margin-top: 5em;
 		}
 
 		@media only screen and (min-width: 750px) {.grid-photo-bottom {
@@ -576,10 +609,16 @@ p a:hover {
 		}
 
 		@media only screen and (min-width: 750px) {
-			.project-photos-grid {
+			.project-photos-grid, .project-photos-grid-image-right, .project-photos-grid-image-left{
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 2.5vw;
+		}
+		}
+
+		@media only screen and (min-width: 750px) {
+			.project-photos-grid-image-left img{
+			margin-bottom: 0;
 		}
 		}
 
@@ -650,12 +689,24 @@ p a:hover {
 
 		.caption, .caption-no-top {
 			width: 50%;
-			margin-bottom: 5vw;
+/*			margin-bottom: 5em;*/
+		}
+
+		.caption-project-photos-single-right, .caption-project-photos-single {
+			width: 100%;
+			}
+
+		@media only screen and (min-width: 750px) {
+		.caption-project-photos-single-right {width: 50%;}
+		}
+
+		@media only screen and (min-width: 750px) {
+		.caption-project-photos-single {width: 50%;}
 		}
 
 		.caption-full {
 			width: 100%;
-}
+		}
 
 		.body-black {
 			background-color: black;
@@ -1130,7 +1181,7 @@ fieldset {
 	padding-left: 0;
 	width: 100%;
 	border: 0.5px solid #CFD7E5;
-	margin-bottom: 2vw;	
+	margin-bottom: 2em;	
 }
 
 @media (min-width:576px){.container,.container-sm{max-width:100%}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:100%}}@media (min-width:100%){.container,.container-lg,.container-md,.container-sm{max-width:100%}}@media (min-width:100%){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:100%}}
@@ -1157,6 +1208,10 @@ fieldset {
 .body-black .container {
 	border: 0;
 }
+
+
+.img-white {
+	border: 0.5px solid #CFD7E5;}
 
 
 
