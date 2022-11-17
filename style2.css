@@ -540,13 +540,13 @@ p a:hover {
 */
 
 
-		.project-photos-single img {
+		.project-photos-single img, .project-photos-single video {
 			width: 100%;
 			margin-bottom: 7.5vw;}
 
 
 		@media only screen and (min-width: 750px) {
-			.project-photos-single img {margin-bottom: 2.5vw;}
+			.project-photos-single img, .project-photos-single video {margin-bottom: 2.5vw;}
 		}
 
 		.project-photos-grid, .project-photos-grid-image-right, .project-photos-grid-image-left {
