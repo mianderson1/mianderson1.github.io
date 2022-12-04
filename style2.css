@@ -80,6 +80,7 @@ body {
 	z-index: 9999999;
 /*	width: 100%;*/
 	margin-top: 1.5em;
+	width: 75%;
 }
 
 .logotype a, .logotype-black a, .logotype-no-hero a {
@@ -186,6 +187,13 @@ p:last-child {margin-bottom: 0;}
 
 .hero .logotype-black p {
 	color:black;
+}
+
+
+@media only screen and (max-width:450px) {
+	.hero .logotype p, .hero .logotype-black p {
+		font-size: 1em;
+	}
 }
 
 .caption p, .caption-full p, .caption-no-top p, .caption-project-photos-single p, .caption-project-photos-single-right p {
@@ -346,7 +354,7 @@ h6 {
 	font-family: AZSerifRegular;
 	font-weight: normal;
 	color: black;
-	font-size: 3.5em;
+	font-size: 3em;
 	margin-top: 150px; 
 }
 
