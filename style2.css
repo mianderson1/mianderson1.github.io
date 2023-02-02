@@ -13,6 +13,7 @@
   object-fit: cover;
   position: fixed;
 	width: 100%;
+	z-index: -1;
   }
 
 
@@ -39,11 +40,15 @@
 	}
 }
 
+.home-above-fold {
+	
+	height:1000px;
+}
 
 .home-intro {
 	position: absolute;
 	margin-right: 7.5vw;
-	padding-bottom: 200px
+	padding-bottom: 200px;
 }
 
 @media only screen and (min-width: 800px) {.home-intro {width: 685px;}}
@@ -72,6 +77,17 @@ body {
 	margin-left: 7.5vw;
 	margin-right: 7.5vw;
 }
+
+@media only screen and (min-width:1290px) {
+	.margin-content {max-width:1200px; margin-left:auto; margin-right: auto;}
+}
+
+.margin-content-original {
+	margin-left: 7.5vw; margin-right: 7.5vw;
+}
+
+.margin-color {background-color: #FCFBFB;}
+
 
 .logotype, .logotype-black, .logotype-no-hero {
 	margin-left: 7.5vw;
@@ -148,6 +164,16 @@ body {
 }
 
 @font-face {
+    src: url("fonts/EduArizonaSerif-Medium.woff2");
+    font-family: AZSerifMedium;
+}
+
+@font-face {
+    src: url("fonts/EduArizonaSerif-MediumItalic.woff2");
+    font-family: AZSerifMediumItalic;
+}
+
+@font-face {
     src: url("fonts/EduArizonaSerif-Light.woff2");
     font-family: AZSerifLight;
 }
@@ -161,6 +187,7 @@ body {
     src: url("fonts/EduArizonaSans-Medium.woff2");
     font-family: AZSansMedium;
 }
+
 
 @font-face {
 	src: url("fonts/EduArizonaSans-Regular.woff2");
@@ -179,6 +206,11 @@ p {
 }
 
 p:last-child {margin-bottom: 0;}
+
+
+.definition {font-family: AZSerifMediumItalic;}
+
+.emphasis-med {font-family: AZSerifMedium;}
 
 .hero .logotype p {
 	color: white;
@@ -227,6 +259,9 @@ p:last-child {margin-bottom: 0;}
 	margin-top: 0;
 }
 
+ul li {padding-bottom: 1em;
+
+}
 
 h1 {
 	font-family: AZSerifThin, serif;
@@ -242,7 +277,7 @@ h1 {
 }
 
 @media only screen and (min-width: 750px) {
-	h1 {font-size: 2.4em; font-size: 2.5em;}
+	h1 {font-size: 2.4em; font-size: 2.5em; font-size: 2.1em;}
 }
 
 
@@ -271,6 +306,8 @@ h2 {
 	font-weight: 200;
 	font-size: 0.85rem;
 }
+
+.projects h2 {font-size: 1.2rem; font-family: AZSansRegular;}
 
 .projects h2 a {
 	color: black;
@@ -329,7 +366,7 @@ h5 {
 	margin-bottom: 0.3em;
 }
 
-.body-black h5 {
+.body-black h5, .body-black h4 {
 	color: white;
 }
 
@@ -452,6 +489,8 @@ header {
 	font-size: 1em;
 }
 
+
+
 a {
 	color: #6086C5;
 	text-decoration: none;
@@ -499,7 +538,16 @@ p a:hover {
 .project-grid-item img {
 	display: block;
 	width: 100%;
+/*	transition: transform 0.3s ease;*/
+
 }
+
+/*
+.project-grid-item img:hover {
+	width: 101%;
+	overflow: hidden;
+}
+*/
 
 
 /*Project Pages*/
@@ -523,6 +571,48 @@ p a:hover {
 
 		@media only screen and (min-width: 750px) {
 		.project-text-intro {
+			display: grid;
+			grid-template-columns: 8fr 1fr 3fr;
+			grid-gap: 2.5vw;
+		/*	width: 100%;*/
+		}
+		}
+
+		.project-text-intro p {
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 750px) {.project-text-intro p {width: 75%;}}
+
+		.project-text-intro .grid-item {
+			margin-bottom: 3em;}
+
+		.project-new-body {
+			padding-top: 20px;
+			padding-bottom: 60px;
+		}
+
+		.project-new-body hr {border: 0.5px solid #A1A1A1;}
+
+		.project-new-body hr:first-child {
+			margin-bottom: 60px;
+		}
+
+		.project-new-body hr:last-child {
+			margin-top: 60px;
+		}
+
+
+		.project-new-body-head {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+
+
+		@media only screen and (min-width: 750px) {
+		.project-new-body-head {
 			display: grid;
 			grid-template-columns: 8fr 1fr 3fr;
 			grid-gap: 2.5vw;
@@ -833,9 +923,8 @@ p a:hover {
 
 		#body-black-next .next-project {
 			margin-top: 0;
-		}
+		}		
 
-		
 		.next-left {
 			display: block;
 			text-align: left;
@@ -843,6 +932,12 @@ p a:hover {
 			padding-top: 140px;
 			padding-bottom: 140px;
 		}
+
+		.next-left-empty {display: block;
+			text-align: left;
+			padding-left: 7.5vw;
+			padding-top: 140px;
+			padding-bottom: 140px;}
 
 		.next-right {
 			text-align: right;
@@ -857,6 +952,12 @@ p a:hover {
 			transition:all 1s ease; 
 		}
 	
+@media only screen and (min-width: 1290px) {
+	.next-left-text {width:600px; margin-left: auto;}
+	.next-right-text {width: 600px; margin-right: auto;}
+	.next-left, .next-left-empty {padding-left: auto;}
+	.next-right {padding-right: auto;}
+}
 	
 
 
@@ -1117,6 +1218,7 @@ p a:hover {
 
 form {
 	margin-bottom: 200px;
+	max-width: 800px;
 }
 
 fieldset {

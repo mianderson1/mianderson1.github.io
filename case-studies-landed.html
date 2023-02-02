@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Landed | Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="icon" type="image/x-icon" href="source-images/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+
+	<header>
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">About</a>
+				<a href="contact.html">Contact</a>
+				<hr style="background-color:white;width:25%;">
+				<a href="case-studies-product.html">Product Design</a>
+                <a href="case-studies-brand.html">Brand Design</a>
+				<a href="decks.html">Decks (coming soon)</a>
+            </div>
+        </nav>
+
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+	
+
+
+	<div class="hero">
+		<div class="logotype-black">
+			<a href="index.html"><p>Mike Anderson \\&nbsp;Visual&nbsp;Designer</p></a>
+		</div>
+		<img src="source-images/landed-1.jpg">
+	</div>
+	
+	<div class="margin-content">
+		<h6>Landed</h6>	
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>THE CHALLENGE</h3>
+				<h1>How do you re-position a brand that can no longer support its core product?</h1>
+				<p>When I joined Landed in April 2022, our core product was down payment support: Up to $160k toward an eligible customer’s down payment. As interest rates rose this past summer, however, our investors became nervous and we could no longer support that down payment support program&mdash;we had to pivot.</p>
+				
+				<p>Landed became the Homebuying Navigator for essential professionals: we would connect teachers, nurses, and other eligible customers to the resources they needed to buy a home, including other, still-running down payment support programs.</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<h3>MY ROLE</h3>
+				<h4>Visual Design</h4>
+				<h4>Art Direction</h4>
+				<h4>Content Strategy</h4>
+			</div>	
+		</div>
+		
+			
+			<div class="project-photos-single">
+				<img loading="lazy" src="source-images/landed-5a.png" alt="">
+				
+				<div class="caption-project-photos-single-right">
+					
+					<p>I executed on the design, editorial, and strategy for this marketing campaign. Marketing wanted to launch a promotion in order to drive more conversions, so I designed banner ads and a landing page to support that strategy. While the number of signups was short of our target, our series of content experiments (i.e. changes to the editorial framing, the position on the page, and more) gave us valuable data for future campaigns.</p>
+					</div>
+				<img loading="lazy" src="source-images/landed-6a.png" alt="">
+				<img loading="lazy" src="source-images/studio-rosha-2b.png" alt="">
+				
+			
+			</div>
+		</div>
+	
+	<div class="next-project">
+				<a href="case-studies-the-quietus.html"><div class="next-left"><div class="next-left-text"><h3>&larr; Website re-design for the Quietus</h3></div></div></a>
+				<a href="case-studies-studio-rosha.html"><div class="next-right"><div class="next-right-text"><h3>Brand re-design for Studio Rosha &rarr;</h3></div></div></a>
+			</div>
+	</div>
+
+	
+				
+	<script>
+	
+		function openNav() {
+		document.getElementById("main-nav").style.height = "100%";
+	}
+
+		function closeNav() {
+			document.getElementById("main-nav").style.height = "0%";
+		}
+	
+</script>
+	
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
+	
+<script>
+		$("#slider").on("input change", (e)=>{
+		  const sliderPos = e.target.value;
+		  // Update the width of the foreground image
+		  $('.foreground-img').css('width', '${sliderPos}%')
+		  // Update the position of the slider button
+		  $('.slider-button').css('left', 'calc(${sliderPos}% - 18px))
+		});
+</script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+	
+
+	
+
+</html>	
