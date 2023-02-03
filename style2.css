@@ -40,10 +40,15 @@
 	}
 }
 
-.home-above-fold {
-	
-	height:1000px;
-}
+.home-above-fold {height:1350px;}
+
+@media only screen and (min-width: 400px) {.home-above-fold {height:1200px;}}
+
+
+@media only screen and (min-width: 500px) {.home-above-fold {height:1150px;}}
+
+
+@media only screen and (min-width: 750px) {.home-above-fold {height:1000px;}}
 
 .home-intro {
 	position: absolute;
@@ -71,7 +76,35 @@ body {
 /*  font-family: Trebuchet MS;*/
   margin: 0;
   padding: 0;
+	color: #000000;
+  background-color: white;
+  transition: background-color 1s ease;
 }
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+/*  display: flex;*/
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+	z-index: 1;
+	position: relative;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-black {
+  background-color: #000000;
+	
+}
+
+.color-self {
+	background-color: #00FFFFFF;
+}
+
 
 .margin-content {
 	margin-left: 7.5vw;
@@ -263,6 +296,9 @@ ul li {padding-bottom: 1em;
 
 }
 
+ul {margin-top:0; margin-bottom: 0;}
+
+
 h1 {
 	font-family: AZSerifThin, serif;
 	text-align: left;
@@ -317,6 +353,9 @@ h2 {
 	color: #6086C5;
 }
 
+.projects h2 {font-size: 1em;}
+
+@media only screen and (min-width: 1000px){.projects h2 {font-size: 1.2rem;}} 
 
 h3 {
 	font-family: AZSansMedium, sans-serif;
@@ -387,14 +426,16 @@ h6 {
 	margin-left: 7.5vw;
 }
 
+
 .margin-content h6 {
 	font-family: AZSerifRegular;
 	font-weight: normal;
 	color: black;
-	font-size: 3em;
+	font-size: 2.4em;
 	margin-top: 150px; 
 }
 
+@media only screen and (min-width:500px) {.margin-content h6: 2.7em;}
 
 
 
