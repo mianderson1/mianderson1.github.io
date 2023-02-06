@@ -62,7 +62,7 @@
 				</div>
 			</div>
 <!--	</div>-->
-<!--		<div class="panel" data-color="black">-->
+		<div class="panel" data-color="black">
 
 		<div class="body-black">
 
@@ -104,7 +104,7 @@
 				<div class="grid-item">
 					<h3>PHILOSOPHY &amp; OFFERING</h3>
 					<h1>I believe that good design should ultimately make our lives easier and more delightful.</h1>
-					<p>Paramount to that mission is making information as accessible and easy to understand as possible. I'm in a unique position to make that happen: With my unique blend of design and content writing experience, I flex between interface and content design as I craft human-centered experiences and products.</p>
+					<p>Paramount to that mission is making information as accessible and easy to understand as possible. I'm in a unique position to make that happen: With my design and content writing experience, I flex between interface and content design as I craft human-centered experiences and products.</p>
 
 					<a href="contact.html"><button class="button button5">Contact Mike&nbsp;→</button></a>
 
@@ -113,7 +113,7 @@
 
 					</div>
 			</div>
-<!--	</div>-->
+	</div>
 	
 
 </body>
@@ -161,6 +161,17 @@
 		  });    
 
 		}).scroll();
+	</script>
+	
+	<script>
+			const [red, green, blue] = [0, 0, 0]
+		const section1 = document.querySelector('.body-black')
+
+		window.addEventListener('scroll', () => {
+		  const y = 1 + (window.scrollY || window.pageYOffset) / 150
+		  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+		  section1.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+		})
 	</script>
 </html>	
 	
