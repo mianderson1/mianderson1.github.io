@@ -546,7 +546,125 @@ header {
 	font-size: 1em;
 }
 
+button {
+  font-family: 'AZSansMedium', sans-serif;
+  font-size: 18px;
+  line-height: 22.6px;
+  background-color: white;
+  padding: 16px 24px 16px 24px;
+  cursor: auto;
+transition: all 0.4s ease;
+	margin-top: 1em;
+}
 
+
+button:hover {background-color: black;
+	color: white;}
+
+.body-black .btn-black:hover {border: 1px solid white;}
+
+
+.btn-black {
+  border: 1px solid #000000;
+  color: #000000;
+	border-radius: 2em;
+}
+
+.btn-grey {
+  border: 4px solid #45423C;
+  color: #45423C;
+}
+
+.arrow, .arrow-reverse {
+  height: 2px;
+  width: 25px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: all .4s ease;
+}
+
+.arrow {margin-right: 15px;}
+.arrow-reverse {margin-left: 15px;}
+
+.arrow-black {
+  background: black;
+	transition: all 0.4s ease;
+}
+
+button .arrow {margin-right: 0;}
+
+button:hover .arrow {
+  width: 35px;
+  margin-right: 5px;
+	color: white;
+	background: white;
+}
+
+button:hover .arrow-black {
+	color: white;
+	background: white;
+}
+
+.arrow-grey {
+  background: #45423C;
+}
+
+.arrow:before,
+.arrow:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  border-radius: 30%;
+	transition: all 0.4s ease;
+}
+
+.arrow:before {
+  right: -2px;
+  bottom: -3px;
+  transform: rotate(-45deg);
+	background: black;
+}
+
+.arrow:after {
+  right: -2px;
+  top: -3px;
+  transform: rotate(45deg);
+	background: black;
+}
+
+.arrow-reverse:before,
+.arrow-reverse:after {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  border-radius: 30%;
+	transition: all 0.4s ease;
+}
+
+.arrow-reverse:before {
+  right: 12px;
+  bottom: -3px;
+  transform: rotate(45deg);
+	background: black;
+}
+
+.arrow-reverse:after {
+  right: 12px;
+  top: -3px;
+  transform: rotate(-45deg);
+	background: black;
+}
+
+button:hover .arrow:after, button:hover .arrow:before {
+	background: white;
+	
+}
 
 a {
 	color: #6086C5;
@@ -599,12 +717,22 @@ p a:hover {
 
 }
 
-/*
-.project-grid-item img:hover {
-	width: 101%;
-	overflow: hidden;
-}
-*/
+.project-grid-item .arrow {
+  margin-bottom: 5px;
+transition: all 0.1 ease;
+width: 18px;}
+
+.project-grid-item h2:hover .arrow {
+  width: 35px;
+  margin-right: 10px;
+	background: #6086C5;}
+
+.project-grid-item h2:hover .arrow:after, .project-grid-item h2:hover .arrow:before {
+	background: #6086C5;}
+
+
+
+
 
 
 /*Project Pages*/
@@ -1008,6 +1136,40 @@ p a:hover {
 		color: white;
 			transition:all 1s ease; 
 		}
+
+		.next-project .arrow, .next-project .arrow-reverse {
+	 	margin-bottom: 5px;
+		transition: all 0.1 ease;
+		width: 18px;}
+
+		.next-left:hover .arrow-reverse, .next-right:hover .arrow {
+			width: 35px;
+  			margin-right: 5px;
+			color: white;
+			background: white;
+			}
+
+		.next-right:hover .arrow {
+  			margin-right: 5px;
+			}
+
+		.next-left:hover .arrow-reverse {
+  			margin-left: -5px;
+			}
+
+
+
+		.next-left:hover .arrow-reverse, .next-right:hover .arrow {
+			margin-left: 5px;
+			}
+
+
+
+		.next-left:hover .arrow-reverse:before, .next-left:hover .arrow-reverse:after {
+			right: 28px;
+		}
+
+		.next-right:hover .arrow:after, .next-right:hover .arrow:before, .next-left:hover .arrow-reverse:after, .next-left:hover .arrow-reverse:before {background: white;}
 	
 @media only screen and (min-width: 1290px) {
 	.next-left-text {width:600px; margin-left: auto;}
