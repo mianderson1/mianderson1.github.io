@@ -152,6 +152,7 @@ body {
 	color: black;
 }
 
+
 .hero .logotype p:hover, .hero .logotype-black p:hover, .logotype-no-hero p:hover, .logotype a p:hover {
  	font-family: AZSerifBold;
 }
