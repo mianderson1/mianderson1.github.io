@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Landed</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="icon" type="image/x-icon" href="source-images/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+
+	<header>
+		
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">About</a>
+				<a href="contact.html">Contact</a>
+				<hr style="background-color:white;width:25%;">
+				<a href="case-studies-product.html">Product Design</a>
+                <a href="case-studies-brand.html">Brand Design</a>
+				<a href="decks.html">Decks</a>
+            </div>
+        </nav>
+
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+
+	
+		
+	<div class="logotype-no-hero">
+		<a href="index.html"><p>Mike Anderson |&nbsp;Digital&nbsp;Designer</p></a>
+	</div>
+	<div class="blank-space"></div>
+	
+	<div class="margin-content">
+		<h6>B2B Deck for Landed</h6>	
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>BRIEF</h3>
+				<h1>Landed needed to convince potential employers that its programs could help with employee retention.</h1>
+								<p>One of Landed’s founders spoke at the Total Worker Health Symposium in October 2022, and he wanted our help selling the Landed brand and product to potential B2B partners. Alex wanted to demonstrate to attendees that our programs could produce happier and healthier employees.</p>
+								
+								<p>Landed’s director of B2B marketing wrote the copy. I edited that text and created all the visuals.</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<h3>MY ROLE</h3>
+				<h4>Visual Design</h4>
+				<h4>Copy Optimization</h4>
+				<h4>Illustration</h4>
+				<h4>Animation</h4>
+			</div>	
+		</div>
+		
+		<div class="project-photos-single">
+
+				<div class="embed-container"
+				 style="position: relative; padding-bottom: 59.27%; height: 0; overflow: hidden; max-width: 100%;">
+				 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+				  src="https://docs.google.com/presentation/d/e/2PACX-1vSrHBdWtM7XYPrlla0wtmrtpMzjPx-0iUNDSXxPkx8jhijMLj6HOpcsPbKjtqK2tn7JY1HpVKe1haXh/embed?start=false&loop=false&delayms=3000&rm=full" frameborder="0" width="960" height="569" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+				</div>
+				<div class="blank-space"></div>
+
+			</div>
+	
+	<div class="blank-space"></div>
+		
+	</div>
+	
+	
+	
+	<div class="next-project">
+		<div class="next-left-empty"><div class="next-left-text"><h3></h3></div></div>
+
+		<a href="decks-landed-template.html"><div class="next-right"><div class="next-right-text"><h3>Deck Template for Landed Employees &nbsp;<span class="arrow arrow-black"></h3></div></div></a>
+	</div>
+		
+		
+	<script>
+	
+		function openNav() {
+		document.getElementById("main-nav").style.height = "100%";
+	}
+
+		function closeNav() {
+			document.getElementById("main-nav").style.height = "0%";
+		}
+	
+</script>
+	
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
+	
+<script>
+		$("#slider").on("input change", (e)=>{
+		  const sliderPos = e.target.value;
+		  // Update the width of the foreground image
+		  $('.foreground-img').css('width', '${sliderPos}%')
+		  // Update the position of the slider button
+		  $('.slider-button').css('left', 'calc(${sliderPos}% - 18px))
+		});
+</script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+	
+
+	
+
+</html>	
