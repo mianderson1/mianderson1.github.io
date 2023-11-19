@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Acaso | Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="icon" type="image/x-icon" href="source-images/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+
+	<header>
+        <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">About</a>
+				<a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+	
+
+
+	<div class="hero">
+		<div class="logotype-black">
+			<a href="index.html"><p>Mike Anderson |&nbsp;Digital&nbsp;Designer</p></a>
+		</div>
+		<img src="source-images/acaso-1.jpg">
+	</div>
+	
+	<div class="margin-content">
+		<div class="project-title">
+			<div class="grid-item">
+				<h3>BRAND DESIGN</h3>
+				<h6>Building a brand for Acaso, from art direction to final product in Webflow</h6>	
+			</div>
+			<div class="grid-item"></div>
+			<div class="grid-item"></div>	
+		</div>	
+
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>THE CHALLENGE</h3>
+				<h1>My co-founders at Acaso needed a brand that would appeal to Gen Z fashion influencers: sophisticated and technical yet also hip and approachable.</h1>
+				<p>My co-founders, Fernando and Camille, wanted to move their family business into the 21st century: Fernando's mom and aunt were seamstresses, and they created clothing for brands like Forever 21 at their family-owned factory in Brooklyn. Fernando and Camille saw an opportunity in the fashion influencers on TikTok: We would create their very own branded clothing; all the influencer would have to do is market the product to their following.</p>
+				
+				<p>I created a brand from the ground up for this young, tech-savy audience: I set the visual standards and tone of voice, oversaw photoshoots and developed set-design concepts for our photography, and finally created Acaso’s website in Figma and Webflow.</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+				<div class="right-column">
+					<h3>MY ROLE</h3>
+					<h4>Brand Identity Design</h4>
+					<h4>Art Direction</h4>
+					<h4>Web Design</h4>
+					<h4>Copywriting & Content Marketing</h4>
+					<h4>Frontend Dev. in Webflow</h4>
+
+					<h3>YEAR</h3>
+					<h4>2023</h4>
+				</div>
+			</div>	
+		</div>
+		
+			
+			<div class="project-photos-single">
+				<a href="https://www.acaso.clothing/"><img loading="lazy" src="source-images/acaso-2.png" alt=""></a>
+			</div>
+			</div>
+		
+	
+	<div class="next-project">
+				<a href="case-landed-signup.html"><div class="next-left"><div class="next-left-text"><h3><span class="arrow-reverse arrow-black"></span>&nbsp; Previous</h3></div></div></a>
+				<a href="case-studies-studio-rosha.html"><div class="next-right"><div class="next-right-text"><h3>Next &nbsp;<span class="arrow arrow-black"></h3></div></div></a>
+			</div>
+
+	
+				
+	<script>
+	
+		function openNav() {
+		document.getElementById("main-nav").style.height = "100%";
+	}
+
+		function closeNav() {
+			document.getElementById("main-nav").style.height = "0%";
+		}
+	
+</script>
+	
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
+	
+<script>
+		$("#slider").on("input change", (e)=>{
+		  const sliderPos = e.target.value;
+		  // Update the width of the foreground image
+		  $('.foreground-img').css('width', '${sliderPos}%')
+		  // Update the position of the slider button
+		  $('.slider-button').css('left', 'calc(${sliderPos}% - 18px))
+		});
+</script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+	
+
+	
+
+</html>	

@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>Initialized | Mike Anderson</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="icon" type="image/x-icon" href="source-images/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	
+<body>
+
+	<header>
+		
+       <nav id="main-nav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">About</a>
+				<a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+       <span class="burger" onclick="openNav()">&#9776;</span>
+    </header>
+
+	
+		
+	<div class="hero">
+		<div class="logotype-black">
+			<a href="index.html"><p>Mike Anderson |&nbsp;Digital&nbsp;Designer</p></a>
+		</div>
+		<img src="source-images/initialized-1f.png">
+	</div>
+	
+	<div class="margin-content">
+		<div class="project-title">
+			<div class="grid-item">
+				<h3>DECKS</h3>
+				<h6>A keynote presentation for Initialized</h6>	
+			</div>
+			<div class="grid-item"></div>
+			<div class="grid-item"></div>	
+		</div>	
+		
+		<div class="project-text-intro">
+			<div class="grid-item">
+				<h3>THE CHALLENGE</h3>
+				<h1>Initialized needed 100 slides in two weeks for a keynote presentation at the Exploratorium, and 10 stakeholders across the company would offer critiques.</h1>
+				<p>This project was new terrain for me and the brand: All prior presentations had been designed for the laptop. This presentation, however, would appear on a 16’x9’ screen in a large auditorium, which meant that I had to evolve the brand standards so they would support readability for audience members sitting 100 feet from the screen.</p>
+				
+				<p>After many late nights, I produced a deck that uses color, type, and animation to create structure and an impactful narrative arc.</p>
+			</div>
+
+			<div class="grid-item"></div>
+
+
+			<div class="grid-item">
+
+				<div class="right-column">
+					<h3>MY ROLE</h3>
+					<h4>Visual Design</h4>
+					<h4>Copy Optimization</h4>
+					<h4>Animation</h4>
+
+
+					<h3>YEAR</h3>
+					<h4>2023</h4>
+				</div>
+
+			</div>	
+		</div>
+		
+		<div class="project-photos-single">
+
+				<div class="embed-container"
+				 style="position: relative; padding-bottom: 59.27%; height: 0; overflow: hidden; max-width: 100%;">
+				 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+				  src="https://docs.google.com/presentation/d/1oxVCKwLHVm321tG7qvOLldAN0QtUsD1Y36YJH5-sVyM/embed?start=false&loop=false&delayms=3000&rm=full" frameborder="0" width="960" height="569" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+				</div>
+				<div class="blank-space"></div>
+
+			</div>
+	
+	<div class="blank-space"></div>
+		
+	</div>
+	
+	
+	
+	<div class="next-project">
+				<a href="project-the-quietus.html"><div class="next-left"><div class="next-left-text"><h3><span class="arrow-reverse arrow-black"></span>&nbsp; Previous</h3></div></div></a>
+				<a href="decks-landed-template.html"><div class="next-right"><div class="next-right-text"><h3>Next &nbsp;<span class="arrow arrow-black"></h3></div></div></a>
+	</div>
+		
+		
+	<script>
+	
+		function openNav() {
+		document.getElementById("main-nav").style.height = "100%";
+	}
+
+		function closeNav() {
+			document.getElementById("main-nav").style.height = "0%";
+		}
+	
+</script>
+	
+<script>function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}</script>
+		
+<script src="js/script2.js"></script>
+	
+<script>
+		$("#slider").on("input change", (e)=>{
+		  const sliderPos = e.target.value;
+		  // Update the width of the foreground image
+		  $('.foreground-img').css('width', '${sliderPos}%')
+		  // Update the position of the slider button
+		  $('.slider-button').css('left', 'calc(${sliderPos}% - 18px))
+		});
+</script>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+	
+
+	
+
+</html>	
