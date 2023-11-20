@@ -772,7 +772,7 @@ width: 18px;}
 		.project-title {margin-top: 150px, width}
 
 
-		.project-title {
+		.project-title, .page-title {
 			margin-top: 150px;
 			display: grid;
 			grid-template-columns: 1fr;
@@ -780,7 +780,7 @@ width: 18px;}
 
 
 		@media only screen and (min-width: 750px) {
-		.project-title {
+		.project-title, .page-title {
 			display: grid;
 			grid-template-columns: 8fr 1fr 3fr;
 			grid-gap: 2.5vw;
